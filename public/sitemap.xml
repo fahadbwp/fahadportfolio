@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Core Landing Page & Sections -->
   <url>
     <loc>https://fahadsaleembwp.netlify.app/</loc>
     <lastmod>2026-08-22</lastmod>
@@ -8,71 +7,9 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://fahadsaleembwp.netlify.app/#services</loc>
+    <loc>https://fahadsaleembwp.netlify.app/blog</loc>
     <lastmod>2026-08-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://fahadsaleembwp.netlify.app/#work</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://fahadsaleembwp.netlify.app/#stack</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://fahadsaleembwp.netlify.app/#contact</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- Blog Knowledge Hub -->
-  <url>
-    <loc>https://fahadsaleembwp.netlify.app/#blog</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.95</priority>
-  </url>
-  <url>
-    <loc>https://fahadsaleembwp.netlify.app/#blog/building-youtube-seo-analyzer-claude-api</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://fahadsaleembwp.netlify.app/#blog/zero-commission-whatsapp-restaurant-ordering-system</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://fahadsaleembwp.netlify.app/#blog/realtime-ai-telemetry-dashboard-architecture</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://fahadsaleembwp.netlify.app/#blog/how-to-generate-b2b-leads-2026</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://fahadsaleembwp.netlify.app/#blog/ecommerce-shopify-brand-lead-mining-guide</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
-    <loc>https://fahadsaleembwp.netlify.app/#blog/crm-data-hygiene-hubspot-salesforce</loc>
-    <lastmod>2026-08-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
   </url>
 </urlset>
