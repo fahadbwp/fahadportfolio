@@ -1,0 +1,70 @@
+[
+  {
+    "id": "b2b-lead-generation-2026",
+    "slug": "how-to-generate-b2b-leads-2026",
+    "title": "How to Generate High-Converting B2B Leads in 2026: The Multi-Pass Verification Protocol",
+    "excerpt": "Why raw scraper lists destroy domain reputation and how a 5-step verification protocol guarantees under 1% bounce rates on outbound sequences.",
+    "date": "Aug 2026",
+    "readTime": "5 min read",
+    "category": "Lead Generation Strategy",
+    "tags": [
+      "B2B Prospecting",
+      "Sales Navigator",
+      "NeverBounce",
+      "Email Deliverability"
+    ],
+    "coverImage": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
+    "content": [
+      "Outbound sales prospecting in 2026 has fundamentally shifted. Spam filters, strict DMARC/DKIM policies, and AI-powered inbox algorithms now penalize unverified cold lists within hours.",
+      "### Step 1: Precision Boolean Search on LinkedIn Sales Navigator\nInstead of broad generic industry searches, use precise Boolean queries combined with headcount growth and seniority filters. Target specific titles: 'VP of Growth' OR 'Head of Acquisition' rather than generic 'Marketing'.",
+      "### Step 2: Multi-Tool Extraction and Cross-Referencing\nNever rely on a single data vendor. Cross-verify email patterns between Apollo.io, Hunter.io, and RocketReach to resolve corporate email formats (e.g. {first}.{last} vs {f}{last}@company.com).",
+      "### Step 3: Server-Level SMTP Ping (NeverBounce / ZeroBounce)\nBefore any contact touches your CRM, run automated SMTP handshake verification. Filter out all 'Catch-All' and 'Disposable' domains to protect your primary sending domain reputation.",
+      "### Step 4: Formatting and CRM Hygiene\nStandardize all names (proper capitalization, removing emojis/degrees from names), clean company legal suffixes (Inc, LLC, Ltd), and map custom lifecycle stages into HubSpot or Salesforce.",
+      "By applying this protocol, outreach campaigns consistently achieve 45%+ open rates, high reply rates, and zero domain blacklisting incidents."
+    ]
+  },
+  {
+    "id": "shopify-ecommerce-lead-mining",
+    "slug": "ecommerce-shopify-brand-lead-mining-guide",
+    "title": "Shopify & E-Commerce Lead Mining: Sourcing 7-Figure DTC Founders & CMOs",
+    "excerpt": "A practical framework for finding verified contact details of high-growth Shopify store owners, CMOs, and e-commerce directors across UK and USA markets.",
+    "date": "Aug 2026",
+    "readTime": "4 min read",
+    "category": "E-Commerce Sourcing",
+    "tags": [
+      "Shopify Brands",
+      "DTC",
+      "List Building",
+      "E-Commerce"
+    ],
+    "coverImage": "https://images.unsplash.com/photo-1556742049-0a67e55722c6?q=80&w=1200&auto=format&fit=crop",
+    "content": [
+      "E-Commerce and DTC brands represent one of the fastest-moving sectors, but identifying the actual decision-maker behind a brand requires specialized research.",
+      "### 1. Store Discovery via BuiltWith & Store Leads\nIdentify high-performing online stores utilizing Shopify Plus, Klaviyo, and specific tech stacks. Filter by estimated monthly sales volume and employee count.",
+      "### 2. Matching Domain to LinkedIn Corporate Hierarchy\nMap the brand domain to company LinkedIn profiles to identify the actual Founder, Head of E-Commerce, or VP of Marketing rather than support emails.",
+      "### 3. Verification & Phone Sourcing\nCollect direct business emails and corporate phone numbers, eliminating duplicate retail locations to give sales teams direct executive access.",
+      "### The Result\nA structured dataset organized by niche, annual revenue band, and verified social touchpoints ready for personalized outreach."
+    ]
+  },
+  {
+    "id": "crm-hygiene-database-cleaning",
+    "slug": "crm-data-hygiene-hubspot-salesforce",
+    "title": "CRM Hygiene 101: Eliminating Data Decay in HubSpot & Salesforce",
+    "excerpt": "How regular deduplication, field normalization, and lifecycle mapping protect sales efficiency and prevent pipeline contamination.",
+    "date": "Aug 2026",
+    "readTime": "4 min read",
+    "category": "CRM Data Management",
+    "tags": [
+      "HubSpot",
+      "Salesforce",
+      "Data Cleaning",
+      "Virtual Assistance"
+    ],
+    "coverImage": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    "content": [
+      "B2B databases decay at an average rate of 25-30% annually as employees switch companies, domains migrate, and phone numbers change.",
+      "### The Core Pillars of CRM Maintenance:\n- **Automated Deduplication:** Merging duplicate contact and company records without losing activity logs or deal histories.\n- **Field Standardization:** Normalizing job titles, country codes, and phone number formatting (+1-XXX-XXX-XXXX).\n- **Lifecycle Stage Audits:** Cleaning outdated leads and re-engaging cold contacts through targeted re-verification.",
+      "Consistent CRM maintenance ensures outreach teams spend their time closing deals rather than troubleshooting broken spreadsheets."
+    ]
+  }
+]
