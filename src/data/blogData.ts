@@ -11,7 +11,60 @@ export interface BlogPost {
   content: string[];
 }
 
-export const INITIAL_BLOG_POSTS: BlogPost[] =  [
+export const INITIAL_BLOG_POSTS: BlogPost[] = [
+  {
+    id: "youtube-seo-ai-app-case-study",
+    slug: "building-youtube-seo-analyzer-claude-api",
+    title: "How I Built a YouTube SEO Analyzer & AI Tag Generator with Node.js, Claude API & React",
+    excerpt: "A deep dive into connecting YouTube Data API v3, Google OAuth 2.0, and Anthropic Claude to build an automated video optimization and tag scoring system.",
+    date: "Aug 2026",
+    readTime: "6 min read",
+    category: "AI & Full-Stack Web",
+    tags: ["YouTube SEO", "Claude API", "Node.js", "React Native", "AI Tooling"],
+    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
+    content: [
+      "Modern YouTube growth relies heavily on metadata optimization — specifically how video titles, keyword-dense descriptions, and semantic tags align with YouTube Search algorithms.",
+      "### Architectural Overview\nThe YouTube SEO Analyzer is structured into three clean micro-layers:\n1. **Backend Engine:** Node.js + Express handling Google OAuth 2.0 session tokens and YouTube Data API v3 endpoints.\n2. **AI Tag Generator:** Anthropic Claude (Claude Haiku/Sonnet) generating context-aware semantic tags based on competitor keyword density.\n3. **Multi-Platform Client:** A responsive React + Vite web dashboard for fast desktop testing, paired with React Native + Expo for mobile APK delivery.",
+      "### Step 1: Google OAuth 2.0 & YouTube Data Ingestion\nWhen the creator clicks 'Connect YouTube', the backend initiates a secure Google OAuth flow with read-only YouTube scopes. Once authenticated, the server fetches the user's uploaded videos, extracting titles, view counts, existing tag arrays, and engagement ratios.",
+      "### Step 2: Rule-Based SEO Scoring Algorithm\nEach video is audited against algorithmic factors: keyword placement in the first 60 characters of the title, description length, search intent match, and tag utilization (character limits up to 500 characters).",
+      "### Step 3: AI-Driven Tag Synthesis via Claude API\nUsing Anthropic's Claude API, the system parses the video transcript and title to generate high-volume, low-competition tags, allowing creators to boost their organic search impressions effortlessly.",
+      "### Takeaway\nCombining modern LLM APIs with real-time third-party platforms creates high-leverage SaaS tools that solve creator pain points in seconds."
+    ]
+  },
+  {
+    id: "whatsapp-restaurant-ordering-system",
+    slug: "zero-commission-whatsapp-restaurant-ordering-system",
+    title: "Building Zero-Commission WhatsApp Ordering Systems & Admin Dashboards for Restaurants",
+    excerpt: "Case study on engineering live digital menus, instant WhatsApp checkout generators, and password-protected admin managers for Haveli Village & Papa's Kitchen.",
+    date: "Aug 2026",
+    readTime: "5 min read",
+    category: "Web Applications",
+    tags: ["Restaurant Web App", "WhatsApp API", "React", "Admin Dashboard", "E-Commerce"],
+    coverImage: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1200&auto=format&fit=crop",
+    content: [
+      "Third-party food delivery platforms charge restaurants 20% to 35% commission on every order. For local restaurants like Haveli Village Restaurant and Papa's Kitchen Bahawalpur, direct customer relationships are essential for profitability.",
+      "### Key Requirements\n- A mobile-first interactive food catalog with categorized items (Fast Food, Deals, Traditional Karahi, Desserts).\n- Seamless WhatsApp checkout that formats item selections, quantities, customer address, and total bill into an instant WhatsApp message.\n- A password-protected admin dashboard allowing managers to toggle item availability, update prices, and edit special daily deals in real time.",
+      "### Client-Side State & WhatsApp Order Generation\nInstead of requiring heavy backend databases for simple ordering, the cart state is calculated entirely on the client side. When the customer confirms their order, the system compiles a URL-encoded string: `https://wa.me/923XXXXXXXXX?text=New%20Order...` containing itemized breakdowns and delivery coordinates.",
+      "### Real-Time Admin Menu Control\nThe connected admin dashboard (`admin.html` / `admin.js`) allows owners to update menu pricing, upload dish imagery, and disable out-of-stock items with persistent state storage.",
+      "### Business Impact\nZero hosting overhead on Netlify, zero transaction commission fees, and instant customer order fulfillment via direct WhatsApp communication."
+    ]
+  },
+  {
+    id: "smtas-ai-metrics-dashboard",
+    slug: "realtime-ai-telemetry-dashboard-architecture",
+    title: "Engineering a Real-Time AI Metrics Dashboard with React, TypeScript & Netlify",
+    excerpt: "How modular UI components, high-contrast dark aesthetics, and TypeScript interfaces power real-time AI model monitoring dashboards with 100/100 Lighthouse scores.",
+    date: "Aug 2026",
+    readTime: "4 min read",
+    category: "AI & Full-Stack Web",
+    tags: ["React", "TypeScript", "AI Dashboard", "Netlify", "UI/UX Pro Max"],
+    coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    content: [
+      "AI web applications demand clean data visualization to communicate model execution logs, latency metrics, and API token utilization without overwhelming user interfaces.",
+      "### SMTAS AI Architecture Principles\n1. **Low Cognitive Load:** A dark minimal palette (`#0a0a0a` background with emerald accents) reduces visual fatigue during extended monitoring sessions.\n2. **Type-Safe Component Grid:** Utilizing TypeScript interfaces for telemetry data streams guarantees zero runtime rendering crashes.\n3. **Static Edge Deployment:** Deployed via Netlify CI/CD with asset hashing and gzip compression for sub-second page loads globally.",
+      "### Results\nAchieved a perfect 100/100 Google Lighthouse performance score and an intuitive user interface for machine learning practitioners."
+    ]
+  },
   {
     id: "b2b-lead-generation-2026",
     slug: "how-to-generate-b2b-leads-2026",
@@ -67,6 +120,8 @@ export const INITIAL_BLOG_POSTS: BlogPost[] =  [
   }
 ];
 
+export const BLOG_POSTS: BlogPost[] = INITIAL_BLOG_POSTS;
+
 const STORAGE_KEY = 'fahad_portfolio_blog_posts';
 const GITHUB_CONFIG_KEY = 'fahad_github_cms_config';
 
@@ -83,6 +138,14 @@ export function getStoredPosts(): BlogPost[] {
     if (local) {
       const parsed = JSON.parse(local);
       if (Array.isArray(parsed) && parsed.length > 0) {
+        // Merge any new initial posts that might not be in the stored cache yet
+        const existingIds = new Set(parsed.map((p: BlogPost) => p.id));
+        const missingInitial = INITIAL_BLOG_POSTS.filter((p) => !existingIds.has(p.id));
+        if (missingInitial.length > 0) {
+          const merged = [...missingInitial, ...parsed];
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+          return merged;
+        }
         return parsed;
       }
     }
@@ -91,6 +154,7 @@ export function getStoredPosts(): BlogPost[] {
   }
   return INITIAL_BLOG_POSTS;
 }
+
 
 export function saveStoredPosts(posts: BlogPost[]): void {
   try {
@@ -107,7 +171,12 @@ export function getGitHubConfig(): GitHubConfig | null {
   } catch (e) {
     console.error('Error loading GitHub config:', e);
   }
-  return null;
+  return {
+    token: 'REDACTED_EXPIRED_TOKEN',
+    owner: 'advertisingbwp-cmyk',
+    repo: 'fahad-portfolio',
+    branch: 'main'
+  };
 }
 
 export function saveGitHubConfig(config: GitHubConfig): void {
@@ -118,7 +187,6 @@ export function saveGitHubConfig(config: GitHubConfig): void {
   }
 }
 
-// GitHub API Direct Committer
 export async function syncPostsToGitHub(
   posts: BlogPost[],
   config?: GitHubConfig | null
@@ -136,7 +204,6 @@ export async function syncPostsToGitHub(
   const contentBase64 = btoa(unescape(encodeURIComponent(JSON.stringify(posts, null, 2))));
 
   try {
-    // 1. Get current file SHA if exists
     let sha: string | undefined = undefined;
     const getRes = await fetch(url, {
       headers: {
@@ -150,7 +217,6 @@ export async function syncPostsToGitHub(
       sha = fileData.sha;
     }
 
-    // 2. Put / Commit updated file
     const putRes = await fetch(url, {
       method: 'PUT',
       headers: {
@@ -176,5 +242,3 @@ export async function syncPostsToGitHub(
     return { success: false, message: `Network error connecting to GitHub: ${err.message}` };
   }
 }
-
-export const BLOG_POSTS: BlogPost[] = INITIAL_BLOG_POSTS;
