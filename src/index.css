@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Fraunces', serif;
+    --font-sans: 'Inter', sans-serif;
+    --font-mono: 'IBM Plex Mono', 'JetBrains Mono', monospace;
+    --verified: #10b981;
+    --verified-soft: rgba(16, 185, 129, 0.15);
+    --amber: #f59e0b;
+    --line: rgba(255, 255, 255, 0.08);
+    --line-strong: rgba(255, 255, 255, 0.16);
+  }
+
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    background-color: #0a0a0a;
+    color: #f4f4f5;
+  }
+
+  body {
+    background-color: #0a0a0a;
+    color: #f4f4f5;
+    overflow-x: hidden;
+    letter-spacing: -0.015em;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    letter-spacing: -0.02em;
+  }
+
+  /* Minimal dark scrollbar */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0a0a;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #262626;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #404040;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+/* Ledger signature table animations */
+.status-cell {
+  position: relative;
+  height: 1.4em;
+  display: block;
+  min-width: 96px;
+}
+
+.status-cell span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-cell .checking {
+  color: var(--amber);
+  animation: swapOut 6s infinite;
+}
+
+.status-cell .verified {
+  color: var(--verified);
+  animation: swapIn 6s infinite;
+}
+
+.status-cell .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+@keyframes swapOut {
+  0%, 32% { opacity: 1; transform: translateY(0); }
+  42%, 100% { opacity: 0; transform: translateY(-4px); }
+}
+
+@keyframes swapIn {
+  0%, 32% { opacity: 0; transform: translateY(4px); }
+  42%, 100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Ambient glow */
+@keyframes ambient-float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+    opacity: 0.15;
+  }
+  50% {
+    transform: translate(15px, -15px) scale(1.05);
+    opacity: 0.28;
+  }
+}
+
+.animate-ambient {
+  animation: ambient-float 10s ease-in-out infinite;
+}
