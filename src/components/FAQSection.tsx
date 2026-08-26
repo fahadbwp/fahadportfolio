@@ -37,30 +37,34 @@ export const FAQSection: React.FC = () => {
   };
 
   return (
-    <section id="faq" className="py-24 px-6 sm:px-8 max-w-6xl mx-auto border-t border-neutral-900 text-left">
-      <div className="max-w-3xl mx-auto space-y-12">
+    <section id="faq" className="py-24 px-6 sm:px-8 max-w-6xl mx-auto border-t border-stone-200 text-left">
+      <div className="space-y-12">
         
-        <div className="text-center space-y-3">
-          <div className="text-xs font-mono uppercase tracking-widest text-emerald-400 flex items-center justify-center gap-2">
+        {/* Section Header */}
+        <div className="space-y-3">
+          <div className="text-xs font-mono uppercase tracking-wider text-orange-600 font-bold flex items-center gap-2">
             <HelpCircle className="w-3.5 h-3.5" />
-            <span>// frequently asked questions</span>
+            <span>// FAQs</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
-            Everything you need to know.
+          <h2 className="text-3xl sm:text-5xl font-black tracking-tight text-stone-950">
+            Frequently Asked Questions
           </h2>
-          <p className="text-neutral-400 font-light text-sm">
+          <p className="text-stone-600 font-medium text-base max-w-xl leading-relaxed">
             Direct answers on lead sourcing protocols, data verification, CRM management, and turnarounds.
           </p>
         </div>
 
-        <div className="space-y-3">
+        {/* FAQ Accordion List (White Theme) */}
+        <div className="space-y-3.5">
           {FAQS.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
               <div
                 key={idx}
-                className={`rounded-2xl border transition-colors ${
-                  isOpen ? 'bg-neutral-900/60 border-neutral-700' : 'bg-neutral-950 border-neutral-900 hover:border-neutral-800'
+                className={`rounded-2xl transition-all border ${
+                  isOpen 
+                    ? 'bg-white border-stone-300 shadow-md' 
+                    : 'bg-stone-50/70 border-stone-200 hover:bg-white hover:border-stone-300'
                 }`}
               >
                 <button
@@ -68,18 +72,18 @@ export const FAQSection: React.FC = () => {
                   className="w-full p-6 text-left flex items-center justify-between gap-4 cursor-pointer"
                   aria-expanded={isOpen}
                 >
-                  <span className="text-sm sm:text-base font-semibold text-white">
+                  <span className="text-base sm:text-lg font-bold text-stone-950">
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`w-4 h-4 text-neutral-400 shrink-0 transition-transform duration-300 ${
-                      isOpen ? 'rotate-180 text-emerald-400' : ''
+                    className={`w-5 h-5 text-stone-500 shrink-0 transition-transform duration-300 stroke-[2.5] ${
+                      isOpen ? 'rotate-180 text-orange-600' : ''
                     }`}
                   />
                 </button>
 
                 {isOpen && (
-                  <div className="px-6 pb-6 text-sm text-neutral-300 leading-relaxed font-sans animate-in fade-in-50 duration-200">
+                  <div className="px-6 pb-6 text-sm sm:text-base text-stone-700 leading-relaxed font-sans animate-in fade-in-50 duration-200 border-t border-stone-100 pt-4">
                     {faq.answer}
                   </div>
                 )}

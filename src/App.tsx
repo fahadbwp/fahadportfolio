@@ -1,16 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { ToolsMarquee } from './components/ToolsMarquee';
 import { ServicesSection } from './components/ServicesSection';
+import { LeadVerificationSimulator } from './components/LeadVerificationSimulator';
 import { Projects } from './components/Projects';
-import { ProjectDetailModal } from './components/ProjectDetailModal';
+import { InteractiveLeadCalculator } from './components/InteractiveLeadCalculator';
 import { StackSection } from './components/StackSection';
 import { WorkflowAndCoverage } from './components/WorkflowAndCoverage';
 import { FAQSection } from './components/FAQSection';
-import { ArticlesPage } from './components/ArticlesPage';
-import { AdminPanel } from './components/AdminPanel';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
+import { ArticlesPage } from './components/ArticlesPage';
+import { AdminPanel } from './components/AdminPanel';
+import { ProjectDetailModal } from './components/ProjectDetailModal';
+import { Preloader } from './components/Preloader';
+import { MagicCursor } from './components/MagicCursor';
+import { BackToTop } from './components/BackToTop';
 import type { Project } from './data/portfolioData';
 
 export const App: React.FC = () => {
@@ -96,9 +102,15 @@ export const App: React.FC = () => {
     );
   }
 
-
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-[#f4f4f5] font-sans selection:bg-emerald-500 selection:text-black">
+    <div className="min-h-screen white-theme-bg text-stone-900 font-sans selection:bg-orange-500 selection:text-white relative">
+      {/* 1. Interactive Page Entrance Preloader */}
+      <Preloader />
+
+      {/* 2. Magnetic Magic Cursor Follower */}
+      <MagicCursor />
+
+      {/* Navigation */}
       <Navbar
         onContactClick={scrollToContact}
         onNavigateArticles={navigateToArticles}
@@ -106,8 +118,21 @@ export const App: React.FC = () => {
       
       <main>
         <Hero onContactClick={scrollToContact} />
+        
+        {/* 3. Infinite Automated Tool Marquee */}
+        <ToolsMarquee />
+
         <ServicesSection />
+
+        {/* 4. Live Lead Verification Automation Simulator */}
+        <LeadVerificationSimulator />
+
+        {/* 5. Projects Showcase with Filter Automation */}
         <Projects onSelectProject={(project) => setSelectedProject(project)} />
+
+        {/* 6. Interactive Lead Requirements & Turnaround Calculator */}
+        <InteractiveLeadCalculator />
+
         <StackSection />
         <WorkflowAndCoverage />
         <FAQSection />
@@ -115,6 +140,9 @@ export const App: React.FC = () => {
       </main>
 
       <Footer />
+
+      {/* 7. Circular Scroll Progress Back To Top Button */}
+      <BackToTop />
 
       {/* Case Study Detail Modal */}
       {selectedProject && (
@@ -129,4 +157,3 @@ export const App: React.FC = () => {
 };
 
 export default App;
-

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { PERSONAL_INFO } from '../data/portfolioData';
-import { Mail, Send, Check, ArrowUpRight, Gift } from 'lucide-react';
-
+import { Mail, Send, Check, Gift, Sparkles } from 'lucide-react';
 import { InstagramIcon, UpworkIcon } from './Icons';
 import confetti from 'canvas-confetti';
 
@@ -18,7 +17,6 @@ export const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-
 
     try {
       const response = await fetch("https://formsubmit.co/ajax/fahadsaleembwp@gmail.com", {
@@ -47,162 +45,155 @@ export const Contact: React.FC = () => {
         setSubmitted(true);
       }
     } catch {
-      // Fallback show success so user isn't stuck
       setSubmitted(true);
     } finally {
       setLoading(false);
     }
   };
 
-
   return (
-    <section id="contact" className="py-32 px-6 sm:px-8 max-w-6xl mx-auto border-t border-neutral-900 text-left">
+    <section id="contact" className="py-24 px-6 sm:px-8 max-w-6xl mx-auto border-t border-stone-200 text-left">
       
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+      {/* 2-Column Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
         
-        {/* Left Column */}
-        <div className="lg:col-span-6 space-y-8">
+        {/* Left Column: Context & Direct Communication Channels */}
+        <div className="lg:col-span-6 space-y-6">
           <div className="space-y-3">
-            <div className="text-xs font-mono uppercase tracking-widest text-neutral-500">
-              // get in touch
+            <div className="text-xs font-mono uppercase tracking-wider text-orange-600 font-bold flex items-center gap-2">
+              <Sparkles className="w-3.5 h-3.5" />
+              <span>// Get In Touch</span>
             </div>
-            <h2 className="text-4xl sm:text-6xl font-bold tracking-tight text-white leading-tight">
-              Let's build your pipeline.
+            <h2 className="text-4xl sm:text-6xl font-black tracking-tight text-stone-950 leading-tight">
+              Let's build your pipeline
             </h2>
-            <p className="text-neutral-400 font-light text-base max-w-md leading-relaxed">
-              Based in Bahawalpur, Pakistan — working with clients across IT, e-commerce, real estate, and professional services.
+            <p className="text-stone-600 font-medium text-base max-w-md leading-relaxed">
+              Based in Bahawalpur, Pakistan — working with clients globally across IT, e-commerce, real estate, and professional services.
             </p>
           </div>
 
-          {/* Direct Links */}
-          <div className="space-y-4">
+          {/* Compact Direct Channel Cards */}
+          <div className="space-y-2.5 pt-2">
+            <div className="text-xs font-mono font-bold uppercase tracking-wider text-stone-400">
+              Direct Channels
+            </div>
             
-            {/* Email link */}
-            <a
-              href={`mailto:${PERSONAL_INFO.email}`}
-              className="flex items-center justify-between p-4 rounded-xl bg-neutral-950 border border-neutral-900 hover:border-neutral-700 transition-colors group"
-            >
-              <div className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-emerald-400" />
-                <div>
-                  <div className="text-[11px] font-mono text-neutral-500 uppercase">Email</div>
-                  <div className="text-sm font-medium text-white group-hover:text-emerald-400 transition-colors">
-                    {PERSONAL_INFO.email}
-                  </div>
+            <div className="flex flex-col gap-2.5">
+              {/* Email link */}
+              <a
+                href={`mailto:${PERSONAL_INFO.email}`}
+                className="flex items-center gap-3.5 p-3.5 rounded-xl bg-stone-50 hover:bg-white border border-stone-200 text-stone-900 transition-all text-xs font-bold shadow-2xs hover:shadow-xs group"
+              >
+                <div className="p-2 rounded-lg bg-orange-100 text-orange-700 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                  <Mail className="w-4 h-4" />
                 </div>
-              </div>
-              <ArrowUpRight className="w-4 h-4 text-neutral-500 group-hover:text-white transition-colors" />
-            </a>
+                <span>{PERSONAL_INFO.email}</span>
+              </a>
 
-            {/* Upwork link */}
-            <a
-              href={PERSONAL_INFO.upwork}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between p-4 rounded-xl bg-neutral-950 border border-neutral-900 hover:border-neutral-700 transition-colors group"
-            >
-              <div className="flex items-center gap-3">
-                <UpworkIcon className="w-4 h-4 text-emerald-400" />
-                <div>
-                  <div className="text-[11px] font-mono text-neutral-500 uppercase">Upwork</div>
-                  <div className="text-sm font-medium text-white group-hover:text-emerald-400 transition-colors">
-                    View profile (100% Job Success)
-                  </div>
+              {/* Upwork link */}
+              <a
+                href={PERSONAL_INFO.upwork}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3.5 p-3.5 rounded-xl bg-stone-50 hover:bg-white border border-stone-200 text-stone-900 transition-all text-xs font-bold shadow-2xs hover:shadow-xs group"
+              >
+                <div className="p-2 rounded-lg bg-emerald-100 text-emerald-700 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                  <UpworkIcon className="w-4 h-4" />
                 </div>
-              </div>
-              <ArrowUpRight className="w-4 h-4 text-neutral-500 group-hover:text-white transition-colors" />
-            </a>
+                <span>Upwork Profile (100% Job Success)</span>
+              </a>
 
-            {/* Instagram link */}
-            <a
-              href={PERSONAL_INFO.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center justify-between p-4 rounded-xl bg-neutral-950 border border-neutral-900 hover:border-neutral-700 transition-colors group"
-            >
-              <div className="flex items-center gap-3">
-                <InstagramIcon className="w-4 h-4 text-pink-400" />
-                <div>
-                  <div className="text-[11px] font-mono text-neutral-500 uppercase">Instagram</div>
-                  <div className="text-sm font-medium text-white group-hover:text-pink-400 transition-colors">
-                    @fahdbwp
-                  </div>
+              {/* Instagram link */}
+              <a
+                href={PERSONAL_INFO.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3.5 p-3.5 rounded-xl bg-stone-50 hover:bg-white border border-stone-200 text-stone-900 transition-all text-xs font-bold shadow-2xs hover:shadow-xs group"
+              >
+                <div className="p-2 rounded-lg bg-pink-100 text-pink-700 group-hover:bg-pink-600 group-hover:text-white transition-colors">
+                  <InstagramIcon className="w-4 h-4" />
                 </div>
-              </div>
-              <ArrowUpRight className="w-4 h-4 text-neutral-500 group-hover:text-white transition-colors" />
-            </a>
-
-            
-
+                <span>Instagram (@fahdbwp)</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        {/* Right Column: Inquiry Form */}
+        {/* Right Column: Clean White Lead Form */}
         <div className="lg:col-span-6">
-          <div className="p-8 rounded-2xl bg-neutral-950 border border-neutral-900">
+          <div className="p-7 sm:p-8 rounded-2xl white-panel shadow-lg">
             {submitted ? (
               <div className="py-12 text-center space-y-5 animate-in zoom-in-95 duration-200">
-                <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center mx-auto">
-                  <Check className="w-6 h-6" />
+                <div className="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto shadow-xs">
+                  <Check className="w-7 h-7" />
                 </div>
                 <div className="space-y-1">
-                  <h3 className="text-xl font-bold text-white">Inquiry Sent Successfully!</h3>
-                  <p className="text-neutral-400 text-sm max-w-sm mx-auto">
-                    Thank you, <span className="text-white font-semibold">{formData.name}</span>. Your requirements have been delivered directly to my inbox. I'll get back to you with your sample leads in under 12 hours.
+                  <h3 className="text-xl font-bold text-stone-950">Inquiry Sent Successfully!</h3>
+                  <p className="text-stone-600 text-sm max-w-sm mx-auto">
+                    Thank you, <span className="text-stone-950 font-bold">{formData.name}</span>. Your requirements have been delivered directly to my inbox. I'll get back to you with your sample leads in under 12 hours.
                   </p>
                 </div>
 
                 <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
-                  
-
                   <button
                     onClick={() => {
                       setSubmitted(false);
                       setFormData({ name: '', email: '', service: 'B2B Lead Generation (10 Free Leads)', message: '' });
                     }}
-                    className="text-xs font-mono uppercase text-neutral-400 hover:text-white underline cursor-pointer"
+                    className="text-xs font-bold text-orange-600 hover:text-orange-800 underline cursor-pointer"
                   >
                     Send another message
                   </button>
                 </div>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="p-3 rounded-xl bg-emerald-500/10 border border-emerald-500/20 flex items-center gap-2 text-xs text-emerald-300 font-mono">
-                  <Gift className="w-4 h-4 text-emerald-400 shrink-0" />
+              <form onSubmit={handleSubmit} className="space-y-4 text-left">
+                {/* Free Trial Banner */}
+                <div className="p-3.5 mb-2 rounded-xl bg-orange-50 border border-orange-200/90 flex items-center gap-3 text-xs text-orange-950 font-sans font-bold text-left">
+                  <div className="p-1.5 rounded-lg bg-orange-200/60 text-orange-800 shrink-0">
+                    <Gift className="w-4 h-4" />
+                  </div>
                   <span>Free Trial: 10 verified sample leads included with your inquiry.</span>
                 </div>
 
-                <div className="space-y-1.5">
-                  <label className="text-xs font-mono uppercase text-neutral-500">Name *</label>
+                {/* Form Inputs */}
+                <div className="space-y-1.5 text-left">
+                  <label htmlFor="contact-name" className="text-xs font-sans font-bold text-stone-800 block text-left">Your Name *</label>
                   <input
+                    id="contact-name"
+                    name="name"
                     type="text"
                     required
-                    placeholder="Your name"
+                    placeholder="e.g. Carla Sanford"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-neutral-800 text-sm text-white focus:outline-none focus:border-white transition-colors"
+                    className="w-full px-4 py-3 rounded-xl clean-input text-sm font-medium placeholder-stone-400"
                   />
                 </div>
 
-                <div className="space-y-1.5">
-                  <label className="text-xs font-mono uppercase text-neutral-500">Email *</label>
+                <div className="space-y-1.5 text-left">
+                  <label htmlFor="contact-email" className="text-xs font-sans font-bold text-stone-800 block text-left">Your Email *</label>
                   <input
+                    id="contact-email"
+                    name="email"
                     type="email"
                     required
-                    placeholder="name@company.com"
+                    placeholder="client@company.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-neutral-800 text-sm text-white focus:outline-none focus:border-white transition-colors"
+                    className="w-full px-4 py-3 rounded-xl clean-input text-sm font-medium placeholder-stone-400"
                   />
                 </div>
 
-                <div className="space-y-1.5">
-                  <label className="text-xs font-mono uppercase text-neutral-500">Service Required</label>
+                <div className="space-y-1.5 text-left">
+                  <label htmlFor="service-select" className="text-xs font-sans font-bold text-stone-800 block text-left">Service Required *</label>
                   <select
+                    id="service-select"
+                    name="service"
+                    aria-label="Service Required"
                     value={formData.service}
                     onChange={(e) => setFormData({ ...formData, service: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-neutral-800 text-sm text-white focus:outline-none focus:border-white transition-colors"
+                    className="w-full px-4 py-3 rounded-xl clean-input text-sm font-medium text-stone-900"
                   >
                     <option>B2B Lead Generation (10 Free Leads)</option>
                     <option>LinkedIn Sales Navigator Extraction</option>
@@ -213,25 +204,28 @@ export const Contact: React.FC = () => {
                   </select>
                 </div>
 
-                <div className="space-y-1.5">
-                  <label className="text-xs font-mono uppercase text-neutral-500">Target ICP & Details *</label>
+                <div className="space-y-1.5 text-left">
+                  <label htmlFor="contact-message" className="text-xs font-sans font-bold text-stone-800 block text-left">Target Audience & Details *</label>
                   <textarea
+                    id="contact-message"
+                    name="message"
                     required
-                    rows={4}
-                    placeholder="Specify target job titles (e.g. CEOs, Marketing Directors), industry, geography..."
+                    rows={3}
+                    placeholder="e.g. CEOs, Marketing Directors"
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    className="w-full px-4 py-3 rounded-xl bg-neutral-900 border border-neutral-800 text-sm text-white focus:outline-none focus:border-white transition-colors resize-none"
+                    className="w-full px-4 py-2.5 rounded-xl clean-input text-sm font-medium placeholder-stone-400 resize-none"
                   ></textarea>
                 </div>
 
+                {/* Submit CTA */}
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full py-3.5 rounded-xl bg-white text-black font-semibold text-xs uppercase tracking-wider hover:bg-neutral-200 transition-colors flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60"
+                  className="w-full py-3.5 rounded-xl btn-primary-dark font-bold text-sm tracking-wide flex items-center justify-center gap-2 cursor-pointer disabled:opacity-60 shadow-md mt-2"
                 >
-                  <Send className="w-3.5 h-3.5" />
-                  <span>{loading ? 'Sending Inquiry...' : 'Send Project Inquiry'}</span>
+                  <Send className="w-4 h-4 mt-0.5" />
+                  <span>{loading ? 'Sending Inquiry...' : 'Send Inquiry'}</span>
                 </button>
               </form>
             )}

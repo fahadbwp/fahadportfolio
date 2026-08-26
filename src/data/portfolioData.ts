@@ -21,7 +21,7 @@ export const PERSONAL_INFO = {
   name: "Fahad Saleem",
   roleTitle: "Lead Generation · Web Builder · Virtual Assistant · Data Specialist",
   tagline: "Fahad Saleem",
-  heroPitch: "Full-stack Virtual Assistant and Lead Generation Expert skilled in B2B/B2C prospect lists, LinkedIn Sales Navigator extraction, and multi-tool email verification. From Excel data cleaning to AI-driven web development, I manage operational tasks in-house so your business runs smoothly.",
+  heroPitch: "Multi-skilled Virtual Assistant and Lead Generation Expert skilled in B2B/B2C prospect lists, LinkedIn Sales Navigator extraction, and multi-tool email verification. From Excel data cleaning to AI-driven web development, I manage operational tasks in-house so your business runs smoothly.",
   freeOffer: "Open for freelance projects, custom web builds & long-term data contracts — 100% quality guarantee.",
 
   location: "Bahawalpur, Pakistan",
@@ -29,7 +29,7 @@ export const PERSONAL_INFO = {
   status: "Available for freelance",
   availability: "30+ hrs / week",
   education: "BSCS — Islamia University of Bahawalpur (final semester)",
-  experienceTenure: "2.7 yrs experience (UPSKILLERS)",
+  experienceTenure: "3+ yrs experience (UPSKILLERS)",
   email: "fahadsaleembwp@gmail.com",
   upwork: "https://www.upwork.com/freelancers/~01402e2d3e4f4322b7?p=1974100444575100928",
   instagram: "https://www.instagram.com/fahdbwp",
@@ -39,7 +39,7 @@ export const PERSONAL_INFO = {
 };
 
 export const STATS = [
-  { value: "2.7 yrs", label: "Lead gen & data entry experience" },
+  { value: "3+ yrs", label: "Lead gen & data entry experience" },
   { value: "30+ hrs", label: "Available per week" },
   { value: "10", label: "Free verified leads on first order" },
   { value: "5", label: "Verification tools run on every list" }
@@ -144,7 +144,7 @@ export const SHIPPED_PROJECTS: Project[] = [
     challenge: "The restaurant needed an all-in-one digital presence to streamline customer direct WhatsApp orders, handle table/hall bookings without commission fees, and give managers instant menu update controls.",
     solution: "Engineered a high-performance modern web application with integrated deal catalogs, instant WhatsApp checkout generator, dynamic review carousel, and password-protected admin menu manager.",
     result: "Shipped live to production on Netlify with zero hosting overhead and automated daily direct customer orders.",
-    liveUrl: "https://haveli-village-restaurant.netlify.app/",
+    liveUrl: "https://haveli-village-restaurant.vercel.app/",
     gallery: [
       "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1200&auto=format&fit=crop"
@@ -165,7 +165,7 @@ export const SHIPPED_PROJECTS: Project[] = [
     challenge: "Complex telemetry metrics and model execution logs needed a clean, dark-mode real-time interface with low cognitive friction.",
     solution: "Designed and implemented a modular dashboard grid featuring interactive charts, quick filtering, and responsive performance across mobile and desktop.",
     result: "Deployed live on Netlify with 100/100 Lighthouse performance metrics.",
-    liveUrl: "https://smtas-ai.netlify.app/",
+    liveUrl: "https://smtas-ai.vercel.app/",
     gallery: [
       "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1200&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?q=80&w=1200&auto=format&fit=crop"

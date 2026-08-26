@@ -53,7 +53,7 @@ export const About: React.FC = () => {
               <Building className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
               <div>
                 <div className="text-[11px] font-mono text-neutral-500 uppercase">Experience</div>
-                <div className="text-sm font-semibold text-white">2.7 Years Tenure</div>
+                <div className="text-sm font-semibold text-white">3+ Years Tenure</div>
                 <div className="text-xs text-neutral-400 mt-0.5">UPSKILLERS (Satellite Town, Bahawalpur)</div>
               </div>
             </div>
