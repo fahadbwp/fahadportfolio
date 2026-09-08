@@ -8,13 +8,13 @@ import {
   Search, 
   Database, 
   Headphones, 
-  Code2 
+  Code2,
+  Users
 } from 'lucide-react';
-import { LinkedinIcon } from './Icons';
 
 const SERVICE_ICONS: Record<string, React.ReactNode> = {
   R01: <Target className="w-5 h-5 text-orange-600" />,
-  R02: <LinkedinIcon className="w-5 h-5 text-blue-600" />,
+  R02: <Users className="w-5 h-5 text-blue-600" />,
   R03: <MailCheck className="w-5 h-5 text-emerald-600" />,
   R04: <FileSpreadsheet className="w-5 h-5 text-amber-600" />,
   R05: <Search className="w-5 h-5 text-purple-600" />,

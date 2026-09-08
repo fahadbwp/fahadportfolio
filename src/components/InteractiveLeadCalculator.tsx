@@ -105,7 +105,7 @@ export const InteractiveLeadCalculator: React.FC = () => {
                     onChange={(e) => setIncludeLinkedIn(e.target.checked)}
                     className="rounded text-orange-600 accent-orange-600"
                   />
-                  <span>Personal LinkedIn URL</span>
+                  <span>Direct Profile / Contact URL</span>
                 </label>
 
                 <label className="flex items-center gap-3 p-3 rounded-xl bg-stone-50 border border-stone-200 text-xs font-bold text-stone-800 cursor-pointer hover:bg-stone-100 transition-colors">
