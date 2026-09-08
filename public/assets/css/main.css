@@ -8877,6 +8877,7 @@ body.tw-magic-cursor #magic-cursor {
   box-shadow:
     0 4px 4px 0 rgba(0, 0, 0, 0.25),
     -4px -4px 0 0 rgba(255, 255, 255, 0.25);
+}
 .portfolio-three-shape {
   position: absolute;
   top: 12%;
@@ -10065,6 +10066,139 @@ body.tw-magic-cursor #magic-cursor {
   .contact-ip-left {
     margin-block-end: 60px;
   }
+}
+
+/* ==========================================================================
+   PORTFOLIO UI/UX AUDIT & POLISH PASS (23 AUDIT FINDINGS)
+   ========================================================================== */
+
+/* 1. Critical — Navigation Overlay Readability */
+.header-three {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 999 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04) !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+}
+
+/* 5. Major — Hero Visual Hierarchy: Subdued "SPECIALIST" background typography */
+.banner-three-title {
+  opacity: 0.038 !important;
+  color: #000000 !important;
+  user-select: none !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+.banner-three-man {
+  z-index: 1 !important;
+}
+
+.banner-three-wrap {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* 6. Major — WORKS Background Typography: Balanced contrast */
+.portfolio-three-shape-title {
+  opacity: 0.035 !important;
+  user-select: none !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+
+.portfolio-three-wrapper,
+.portfolio-three-item {
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* 2, 3, 13, 20 — Experience & Status Text Wrapping Fixes */
+.feature-three-text {
+  word-break: normal !important;
+  overflow-wrap: normal !important;
+}
+
+.feature-three-company {
+  min-width: 170px !important;
+  white-space: nowrap !important;
+  display: inline-block !important;
+}
+
+.feature-three-status span {
+  white-space: nowrap !important;
+  display: inline-block !important;
+}
+
+.feature-three-item {
+  flex-wrap: nowrap !important;
+  gap: 1.25rem !important;
+}
+
+@media (max-width: 767px) {
+  .feature-three-item {
+    flex-wrap: wrap !important;
+  }
+}
+
+/* 14 — Percentage Symbol Wrapping Prevention */
+.banner-three-counter-title,
+.about-three-counter,
+.purecounter,
+.text-nowrap {
+  white-space: nowrap !important;
+}
+
+/* 18 — Project Link Icon Consistency */
+.portfolio-three-button .portfolio-three-btn {
+  width: 44px !important;
+  height: 44px !important;
+  min-width: 44px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background: #000000 !important;
+  color: #ffffff !important;
+  border-radius: 50% !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  font-size: 1.15rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+}
+
+.portfolio-three-button .portfolio-three-btn:hover {
+  background: var(--main-two-600, #ea580c) !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) scale(1.06) !important;
+  box-shadow: 0 4px 14px rgba(234, 88, 12, 0.3) !important;
+}
+
+/* 22 — Discover Upwork CTA Integration */
+.portfolio-cta-container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin-top: 3.5rem !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* 23 — Footer Alignment */
+.footer-three-border {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Form Input Readability */
+.footer-three-form input::placeholder,
+.footer-three-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7) !important;
+  opacity: 1 !important;
 }
 
 /*# sourceMappingURL=main.css.map */

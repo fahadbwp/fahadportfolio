@@ -10,9 +10,10 @@ import {
   ArrowRight, 
   MessageSquare, 
   Briefcase,
-  Plus
+  Plus,
+  Mail
 } from 'lucide-react';
-import { InstagramIcon, LinkedinIcon, UpworkIcon } from './Icons';
+import { InstagramIcon, UpworkIcon } from './Icons';
 
 interface HeroProps {
   onContactClick: () => void;
@@ -111,14 +112,12 @@ export const Hero: React.FC<HeroProps> = ({ onContactClick }) => {
               </a>
               
               <a
-                href={PERSONAL_INFO.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="h-10 w-10 flex items-center justify-center rounded-xl bg-white border border-stone-200 text-stone-700 hover:text-blue-600 hover:border-blue-300 hover:scale-105 transition-all shadow-2xs"
-                title="LinkedIn Profile"
-                aria-label="LinkedIn Profile"
+                href={`mailto:${PERSONAL_INFO.email}`}
+                className="h-10 w-10 flex items-center justify-center rounded-xl bg-white border border-stone-200 text-stone-700 hover:text-orange-600 hover:border-orange-300 hover:scale-105 transition-all shadow-2xs"
+                title="Send Email"
+                aria-label="Send Email"
               >
-                <LinkedinIcon className="w-4 h-4" />
+                <Mail className="w-4 h-4" />
               </a>
             </div>
 

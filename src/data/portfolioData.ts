@@ -33,7 +33,6 @@ export const PERSONAL_INFO = {
   email: "fahadsaleembwp@gmail.com",
   upwork: "https://www.upwork.com/freelancers/~01402e2d3e4f4322b7?p=1974100444575100928",
   instagram: "https://www.instagram.com/fahdbwp",
-  linkedin: "https://www.linkedin.com/in/fahadsaleembwp0/",
   avatarUrl: "/fahad.jpg",
   resumeUrl: "/Fahad_Saleem_CV.pdf",
 };
