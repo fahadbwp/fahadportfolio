@@ -491,7 +491,7 @@
 
   ///////////////////////
   // 08. Image Cliping Effect
-  document.addEventListener("DOMContentLoaded", () => {
+  function initImageClipAnimation() {
     const initialClipPaths = [
       "polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%)",
       "polygon(33.33% 0%, 33.33% 0%, 33.33% 0%, 33.33% 0%)",
@@ -569,7 +569,13 @@
         }
       });
     });
-  });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initImageClipAnimation);
+  } else {
+    initImageClipAnimation();
+  }
 
   ///////////////////////
   // 09. Hover Reveal
