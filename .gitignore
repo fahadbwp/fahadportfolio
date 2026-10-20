@@ -24,3 +24,6 @@ scratch
 *.njsproj
 *.sln
 *.sw?
+
+# Large ISO files
+*.iso
