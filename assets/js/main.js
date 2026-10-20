@@ -77,25 +77,110 @@
     });
   }
 
-  ////////////////////////////////////////////////////
-  // 04. offcanvas Menu JS
+    ////////////////////////////////////////////////////
+  // 04. offcanvas Menu JS & Smooth Section Navigation
+  function closeOffcanvasMenu() {
+    $(".tw-offcanvas-2-area").removeClass("opened");
+    $(".body-overlay").removeClass("opened");
+    setTimeout(() => {
+      $(".tw-text-hover-effect-word").removeClass("animated-text");
+    }, 400);
+  }
+
+  function scrollToTargetSection(targetEl, smooth) {
+    if (!targetEl) return;
+    if (typeof smooth === "undefined") smooth = true;
+
+    // Check if GSAP ScrollSmoother is active
+    if (typeof ScrollSmoother !== "undefined" && ScrollSmoother.get()) {
+      var smoother = ScrollSmoother.get();
+      smoother.scrollTo(targetEl, smooth, "top 70px");
+    } else {
+      var headerOffset = 70;
+      var elementPosition = targetEl.getBoundingClientRect().top;
+      var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+      window.scrollTo({
+        top: Math.max(0, offsetPosition),
+        behavior: smooth ? "smooth" : "auto"
+      });
+    }
+  }
+
+  // Open offcanvas menu
   $(".tw-offcanvas-open-btn").on("click", function () {
     $(".tw-offcanvas-2-area").addClass("opened");
+    $(".body-overlay").addClass("opened");
 
     setTimeout(() => {
       $(".tw-text-hover-effect-word").addClass("animated-text");
-    }, 900);
+    }, 600);
+
+    // Focus first navigation item for accessibility
+    setTimeout(() => {
+      var firstLink = $(".tw-offcanvas-2-area nav a").first();
+      if (firstLink.length) firstLink.focus();
+    }, 200);
   });
 
   ////////////////////////////////////////////////////
   // 05. offcanvas two Menu JS
-  $(".tw-offcanvas-2-close-btn").on("click", function () {
-    setTimeout(() => {
-      $(".tw-text-hover-effect-word").removeClass("animated-text");
-    }, 1200);
+  $(".tw-offcanvas-2-close-btn, .body-overlay").on("click", function () {
+    closeOffcanvasMenu();
+    $(".tw-offcanvas-open-btn").focus();
+  });
 
-    $(".tw-offcanvas-2-area").removeClass("opened");
-    $(".body-overlay").removeClass("opened");
+  // Handle in-page navigation clicks on menu links, offcanvas logo, and general hash links
+  $(document).on("click", ".tw-offcanvas-2-area a[href^='#'], a.logo-1[href^='#']", function (e) {
+    var href = $(this).attr("href");
+    if (href && href.length > 1 && href.startsWith("#")) {
+      var targetEl = document.querySelector(href);
+      if (targetEl) {
+        e.preventDefault();
+        closeOffcanvasMenu();
+
+        // Update URL hash without standard page jump
+        if (window.location.hash !== href) {
+          if (history.pushState) {
+            history.pushState(null, "", href);
+          } else {
+            window.location.hash = href;
+          }
+        }
+
+        // Scroll to section with small timeout to allow menu fade transition
+        setTimeout(() => {
+          scrollToTargetSection(targetEl, true);
+        }, 100);
+      }
+    }
+  });
+
+  // Keyboard navigation accessibility: Space key on anchor triggers click
+  $(document).on("keydown", ".tw-offcanvas-2-area a[href^='#']", function (e) {
+    if (e.key === " " || e.key === "Spacebar") {
+      e.preventDefault();
+      $(this).trigger("click");
+    }
+  });
+
+  // Keyboard navigation accessibility: Escape key closes menu
+  $(document).on("keydown", function (e) {
+    if (e.key === "Escape" && $(".tw-offcanvas-2-area").hasClass("opened")) {
+      closeOffcanvasMenu();
+      $(".tw-offcanvas-open-btn").focus();
+    }
+  });
+
+  // Browser Back/Forward navigation support (popstate)
+  window.addEventListener("popstate", function () {
+    var hash = window.location.hash;
+    if (hash && hash.length > 1) {
+      var targetEl = document.querySelector(hash);
+      if (targetEl) {
+        closeOffcanvasMenu();
+        scrollToTargetSection(targetEl, true);
+      }
+    }
   });
 
   ////////////////////////////////////////////////////

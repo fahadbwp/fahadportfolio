@@ -2103,7 +2103,8 @@ input:focus-visible {
     padding-left: 0;
   }
 }
-.tw-offcanvas-2-area .tw-main-menu-mobile > nav > ul > li > a:hover {
+.tw-offcanvas-2-area .tw-main-menu-mobile > nav > ul > li > a:hover,
+.tw-offcanvas-2-area .tw-main-menu-mobile > nav > ul > li > a:focus-visible {
   color: var(--main-two-600);
 }
 .tw-offcanvas-2-area .tw-main-menu-mobile > nav > ul > li > a::after {
