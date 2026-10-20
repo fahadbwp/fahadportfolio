@@ -274,7 +274,7 @@ export const BentoDashboard: React.FC<BentoDashboardProps> = ({
                       BSCS STUDENT &middot; LEAD GEN SPECIALIST
                     </div>
                     <p className="text-xs sm:text-[13px] text-stone-700/90 leading-relaxed font-normal pt-1">
-                      Creative, data-driven developer & lead generation expert. Specializing in high-intent prospect pipelines, LinkedIn Sales Navigator extractions, and modern AI-assisted web applications.
+                      Creative, data-driven developer & lead generation specialist. Specializing in prospect research, LinkedIn Sales Navigator extractions, and modern AI-assisted web applications.
                     </p>
                   </div>
                 </div>

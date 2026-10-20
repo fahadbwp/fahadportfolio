@@ -9,7 +9,7 @@ interface FAQItem {
 const FAQS: FAQItem[] = [
   {
     question: "How do you collect and verify B2B & Shopify E-Commerce leads?",
-    answer: "I extract decision-makers (CEOs, Founders, CMOs) using LinkedIn Sales Navigator with Boolean search filters. Every contact is multi-pass verified through Apollo.io, Hunter.io, and NeverBounce to guarantee zero bounce rates and 100% accuracy before delivery."
+    answer: "I identify decision-makers (CEOs, Founders, CMOs) using LinkedIn Sales Navigator with targeted search filters. Every contact is multi-pass checked through tools like Apollo.io, Hunter.io, and NeverBounce to ensure high deliverability and verified contact data before delivery."
   },
   {
     question: "What industries and company sizes do you specialize in?",

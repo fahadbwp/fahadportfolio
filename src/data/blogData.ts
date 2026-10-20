@@ -50,19 +50,19 @@ export const INITIAL_BLOG_POSTS: BlogPost[] = [
     ]
   },
   {
-    id: "smtas-ai-metrics-dashboard",
-    slug: "realtime-ai-telemetry-dashboard-architecture",
-    title: "Engineering a Real-Time AI Metrics Dashboard with React, TypeScript & Netlify",
-    excerpt: "How modular UI components, high-contrast dark aesthetics, and TypeScript interfaces power real-time AI model monitoring dashboards with 100/100 Lighthouse scores.",
+    id: "plexudo-creator-tools-architecture",
+    slug: "realtime-creator-analytics-architecture",
+    title: "Engineering YouTube Creator Tools with Python, Flask, Groq AI & Vercel",
+    excerpt: "How YouTube Data API v3 and Groq AI power real-time channel diagnostics, keyword intelligence, and content strategy insights for video creators.",
     date: "Aug 2026",
     readTime: "4 min read",
-    category: "AI & Full-Stack Web",
-    tags: ["React", "TypeScript", "AI Dashboard", "Netlify", "UI/UX Pro Max"],
-    coverImage: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
+    category: "AI & Web Development",
+    tags: ["Python", "Flask", "Groq AI", "YouTube API", "Vercel"],
+    coverImage: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
     content: [
-      "AI web applications demand clean data visualization to communicate model execution logs, latency metrics, and API token utilization without overwhelming user interfaces.",
-      "### SMTAS AI Architecture Principles\n1. **Low Cognitive Load:** A dark minimal palette (`#0a0a0a` background with emerald accents) reduces visual fatigue during extended monitoring sessions.\n2. **Type-Safe Component Grid:** Utilizing TypeScript interfaces for telemetry data streams guarantees zero runtime rendering crashes.\n3. **Static Edge Deployment:** Deployed via Netlify CI/CD with asset hashing and gzip compression for sub-second page loads globally.",
-      "### Results\nAchieved a perfect 100/100 Google Lighthouse performance score and an intuitive user interface for machine learning practitioners."
+      "Modern video creators and channel managers require fast, actionable data diagnostics to discover trending topics, optimize video metadata, and analyze competitor strategies without complex software overhead.",
+      "### Plexudo Architecture Principles\n1. **Low Latency AI Insights:** Combining YouTube Data API v3 endpoints with Groq AI accelerated inference provides sub-second content evaluation.\n2. **Type-Safe & Clean APIs:** Python Flask backend structures data objects cleanly for rapid client rendering.\n3. **Edge Deployment:** Deployed on Vercel for continuous integration and global access.",
+      "### Results\nDelivers instant video diagnostics, viral title ideas, and competitor channel audits in an accessible creator platform."
     ]
   },
   {
@@ -171,12 +171,7 @@ export function getGitHubConfig(): GitHubConfig | null {
   } catch (e) {
     console.error('Error loading GitHub config:', e);
   }
-  return {
-    token: 'REDACTED_EXPIRED_TOKEN',
-    owner: 'advertisingbwp-cmyk',
-    repo: 'fahad-portfolio',
-    branch: 'main'
-  };
+  return null;
 }
 
 export function saveGitHubConfig(config: GitHubConfig): void {

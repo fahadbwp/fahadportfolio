@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Phosphor";
+  src: url("../fonts/Phosphor.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Phosphor-Bold";
+  src: url("../fonts/Phosphor-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+.ph {
+  font-family: "Phosphor" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ph-bold {
+  font-family: "Phosphor-Bold" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ph-arrow-bend-up-right:before {
+  content: "\e026";
+}
+.ph-arrow-up:before {
+  content: "\e08e";
+}
+.ph-arrow-up-right:before {
+  content: "\e092";
+}
+.ph-briefcase:before {
+  content: "\e0ee";
+}
+.ph-check:before {
+  content: "\e182";
+}
+.ph-check-circle:before {
+  content: "\e184";
+}
+.ph-clock:before {
+  content: "\e19a";
+}
+.ph-envelope:before {
+  content: "\e214";
+}
+.ph-envelope-simple:before {
+  content: "\e218";
+}
+.ph-github-logo:before {
+  content: "\e576";
+}
+.ph-instagram-logo:before {
+  content: "\e2d0";
+}
+.ph-map-pin-line:before {
+  content: "\e318";
+}
+.ph-star:before {
+  content: "\e46a";
+}

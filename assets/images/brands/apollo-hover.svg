@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 44" fill="none">
+  <g transform="translate(6, 6)">
+    <path d="M16 2L2 30h7.5l2.8-5.8h7.4l2.8 5.8H30L16 2zm0 8.5l2.4 5.2h-4.8L16 10.5z" fill="#f59e0b"/>
+    <circle cx="16" cy="18" r="1.8" fill="#ffffff"/>
+  </g>
+  <text x="46" y="29" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="19" fill="#d97706" letter-spacing="-0.3">Apollo.io</text>
+</svg>

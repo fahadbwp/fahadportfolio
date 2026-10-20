@@ -1,0 +1,37 @@
+# Fahad Saleem
+
+> Personal portfolio and professional profile of Fahad Saleem, specializing in AI data collection & annotation, B2B lead generation, and AI-assisted web development based in Bahawalpur, Pakistan.
+
+* Canonical URL: https://fahadsaleembwp.vercel.app/
+* Primary GitHub: https://github.com/fahadbwp
+* Upwork Profile: https://www.upwork.com/freelancers/~01402e2d3e4f4322b7?p=1974100444575100928
+* Contact Email: fahadsaleembwp@gmail.com
+* Location: Bahawalpur, Punjab, Pakistan
+
+## Professional Identity & Core Competencies
+* **AI Data Collection & Annotation**: Video data collection, image annotation, object tagging, and AI dataset labeling.
+* **B2B Lead Generation & Data Entry**: Prospect research, decision-maker discovery (Founders, CMOs, Directors), email verification, and structured data entry in Excel & Google Sheets.
+* **Prospecting Tools**: LinkedIn Sales Navigator, Apollo.io, Hunter.io, NeverBounce.
+* **AI-Assisted Web Development**: Responsive web applications and developer tools built with Python, Flask, React, TypeScript, and Next.js.
+
+## Professional Experience
+* **Claru.ai** — AI Data Collection & Annotation Contributor (Project-Based), Feb 2026 – Oct 2026.
+  * Real-world video data collection, image and video annotation, dataset labeling, and task submission.
+* **UP-Skiller** — Lead Generation & Data Entry, 2023 – 2025.
+  * Targeted prospect research using LinkedIn Sales Navigator and Apollo.io, email research, and structured spreadsheet data management.
+
+## Education
+* **BS Computer Science** — The Islamia University of Bahawalpur (2021–2025 academic period).
+  * Final semester examinations completed; result awaited.
+
+## Featured & Verified Projects
+* **Plexudo — YouTube Creator Tools**: Creator platform combining YouTube Data API v3 and Groq AI for video diagnostics, title ideas, and competitor channel insights.
+  * Live Site: https://plexudo.vercel.app
+  * Repository: https://github.com/fahadbwp/plexodu
+* **AI Smart Text Utility**: Open-source developer utility for formatting, text cleanup, JSON/CSV conversion, and AI-assisted text transformation.
+  * Repository: https://github.com/fahadbwp/ai-text-utility
+* **Haveli Village Restaurant Web & Ordering System**: Interactive digital menu and WhatsApp ordering platform for local restaurant.
+  * Live Site: https://haveli-village-restaurant.vercel.app/
+
+## Optional Informational Note
+This file is provided as an informational, human- and machine-readable reference summarizing the publicly available portfolio of Fahad Saleem. It is not an assertion of search engine ranking guarantees.

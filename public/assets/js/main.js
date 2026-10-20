@@ -27,44 +27,11 @@
   "use strict";
 
   ////////////////////////////////////////////////////
-  // 01. PreLoader Js
-  document.addEventListener("DOMContentLoaded", () => {
-    // Create GSAP timeline
-    const tl = gsap.timeline();
-    const svg = document.getElementById("preloaderSvg");
-    const curve = "M0 502S175 272 500 272s500 230 500 230V0H0Z";
-    const flat = "M0 2S175 1 500 1s500 1 500 1V0H0Z";
-    // Text animation
-    tl.to(".preloader-heading .load-text, .preloader-heading .cont", {
-      delay: 1,
-      y: -80,
-      opacity: 0,
-      duration: 0.6,
-    })
-      // SVG curve animation
-      .to(svg, {
-        duration: 0.6,
-        attr: { d: curve },
-        ease: "power2.inOut",
-      })
-      // Flatten SVG
-      .to(svg, {
-        duration: 0.6,
-        attr: { d: flat },
-        ease: "power2.inOut",
-      })
-      // Slide preloader up
-      .to(".preloader", {
-        y: "-130%",
-        duration: 0.8,
-        ease: "power4.inOut",
-      })
-      // Remove from DOM flow
-      .set(".preloader", {
-        display: "none",
-        zIndex: -1,
-      });
-  });
+  // 01. PreLoader Js (Managed via CSS animations)
+  setTimeout(() => {
+    const p = document.querySelector(".preloader");
+    if (p) { p.style.display = "none"; p.style.zIndex = "-1"; }
+  }, 700);
 
   ////////////////////////////////////////////////////
   // 02. Sticky Js
@@ -148,11 +115,13 @@
 
   ////////////////////////////////////////////////////
   // 07. AOS Js
-  AOS.init({
-    once: false, // animation will happen every time you scroll
-    offset: 0, // start animation when element enters the viewport
-    anchorPlacement: "top-bottom", // when the bottom of the element hits the bottom of the screen
-  });
+  if (typeof AOS !== "undefined") {
+    AOS.init({
+      once: true,
+      offset: 0,
+      anchorPlacement: "top-bottom",
+    });
+  }
 
   // 08. Backtotop Js
   function back_to_top() {
@@ -175,20 +144,24 @@
 
   ////////////////////////////////////////////////////
   // 09. Magnific Popup Js
-  $(".open-popup").magnificPopup({
-    type: "iframe",
-    removalDelay: 300,
-    mainClass: "mfp-fade",
-  });
+  if ($.fn && $.fn.magnificPopup) {
+    $(".open-popup").magnificPopup({
+      type: "iframe",
+      removalDelay: 300,
+      mainClass: "mfp-fade",
+    });
+  }
 
   ////////////////////////////////////////////////////
   // 10. Counter Js
-  new PureCounter();
-  new PureCounter({
-    filesizing: true,
-    selector: ".filesizecount",
-    pulse: 2,
-  });
+  if (typeof PureCounter !== "undefined") {
+    new PureCounter();
+    new PureCounter({
+      filesizing: true,
+      selector: ".filesizecount",
+      pulse: 2,
+    });
+  }
 
   ////////////////////////////////////////////////////
   // 11. Feature Widget Animation Js
@@ -234,13 +207,33 @@
   );
 
   ////////////////////////////////////////////////////
-  // 13. Bg Image For Attribute  Js
-  $(".bg-img").each(function () {
-    var img = $(this).data("background-image");
-    if (img) {
-      $(this).css("background-image", "url('" + img + "')");
+  // 13. Bg Image For Attribute Js (Hover & fine pointer only, lazy loaded)
+  if (window.matchMedia("(hover: hover) and (pointer: fine)").matches) {
+    if ("IntersectionObserver" in window) {
+      var bgObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            var el = $(entry.target);
+            var img = el.data("background-image");
+            if (img) {
+              el.css("background-image", "url('" + img + "')");
+            }
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: "250px" });
+      $(".bg-img").each(function () {
+        bgObserver.observe(this);
+      });
+    } else {
+      $(".bg-img").each(function () {
+        var img = $(this).data("background-image");
+        if (img) {
+          $(this).css("background-image", "url('" + img + "')");
+        }
+      });
     }
-  });
+  }
 
   ////////////////////////////////////////////////////
   // 14. Mouse active Js

@@ -20,6 +20,14 @@
 (function ($) {
   "use strict";
 
+  const isDesktop = () => {
+    return (
+      window.innerWidth >= 992 &&
+      !("ontouchstart" in window) &&
+      (navigator.maxTouchPoints || 0) === 0
+    );
+  };
+
   ////////////////////////////////////////////////////
   // 01. Smooth Scroll Js
   function smoothSctoll() {
@@ -39,28 +47,37 @@
     });
   }
   smoothSctoll();
-  if ($("#smooth-wrapper").length && $("#smooth-content").length) {
-    gsap.registerPlugin(
-      ScrollTrigger,
-      ScrollSmoother,
-      TweenMax,
-      ScrollToPlugin,
-    );
+  gsap.registerPlugin(ScrollTrigger, TweenMax, ScrollToPlugin);
+  if (isDesktop() && $("#smooth-wrapper").length && $("#smooth-content").length) {
+    gsap.registerPlugin(ScrollSmoother);
     gsap.config({
       nullTargetWarn: false,
     });
     let smoother = ScrollSmoother.create({
-      smoothTouch: 0.2,
-      smooth: 4,
+      smooth: 2,
       effects: true,
       normalizeScroll: false,
       ignoreMobileResize: true,
     });
+    if (window.location.hash) {
+      setTimeout(() => {
+        try {
+          smoother.scrollTo(window.location.hash, false);
+        } catch (e) {}
+      }, 150);
+    }
+  } else if (window.location.hash) {
+    setTimeout(() => {
+      try {
+        const target = document.querySelector(window.location.hash);
+        if (target) target.scrollIntoView({ behavior: "smooth" });
+      } catch (e) {}
+    }, 150);
   }
 
   ////////////////////////////////////////////////////
   // 02. Char SplitText Js
-  if ($(window).width() > 576 && $(".tw-char-animation").length > 0) {
+  if (isDesktop() && $(".tw-char-animation").length > 0) {
     let char_come = gsap.utils.toArray(".tw-char-animation");
     char_come.forEach((splitTextLine) => {
       const tl = gsap.timeline({
@@ -94,7 +111,7 @@
 
   ////////////////////////////////////////////////////
   // 03. Text Invart Js
-  if ($(".tw-itm-title tw-itm-anim").length) {
+  if (isDesktop() && $(".tw-itm-title tw-itm-anim").length) {
     let staggerAmount = 0.03,
       translateXValue = 20,
       delayValue = 0.1,
@@ -122,7 +139,7 @@
       });
     });
   }
-  if ($(".tw-sub-tilte").length) {
+  if (isDesktop() && $(".tw-sub-tilte").length) {
     var agtsub = $(".tw-sub-tilte");
     if (agtsub.length == 0) return;
     gsap.registerPlugin(SplitText);
@@ -153,7 +170,7 @@
       });
     });
   }
-  if ($(".tw-itm-title").length) {
+  if (isDesktop() && $(".tw-itm-title").length) {
     var txtheading = $(".tw-itm-title");
     if (txtheading.length == 0) return;
     gsap.registerPlugin(SplitText);
@@ -363,7 +380,7 @@
 
   ////////////////////////////////////////////////////
   // 06. Footer Title
-  if ($(".animated-title").length > 0) {
+  if (isDesktop() && $(".animated-title").length > 0) {
     let cta = gsap.timeline({
       repeat: -1,
       delay: 0.5,

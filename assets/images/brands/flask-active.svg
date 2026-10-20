@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 44" fill="none">
+  <g transform="translate(8, 5)">
+    <path d="M11 2h8v4h-1.5v6.5l8.5 14c1.2 2 .2 4.5-2 4.5H6c-2.2 0-3.2-2.5-2-4.5l8.5-14V6H11V2z" stroke="#1e293b" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+    <path d="M8 23h14" stroke="#475569" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="12" cy="27" r="1.5" fill="#475569"/>
+    <circle cx="17" cy="26" r="1.2" fill="#475569"/>
+  </g>
+  <text x="48" y="29" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="19" fill="#0f172a" letter-spacing="-0.3">Flask</text>
+</svg>

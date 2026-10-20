@@ -1,4 +1,8 @@
-if ($("body").not(".is-mobile").hasClass("tw-magic-cursor")) {
+if (
+  window.matchMedia &&
+  window.matchMedia("(hover: hover) and (pointer: fine)").matches &&
+  $("body").not(".is-mobile").hasClass("tw-magic-cursor")
+) {
   $(".tw-magnetic-item").wrap('<div class="tw-magnetic-wrap"></div>');
 
   if ($("a.tw-magnetic-item").length) {

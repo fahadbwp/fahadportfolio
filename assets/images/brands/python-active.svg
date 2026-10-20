@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 44" fill="none">
+  <g transform="translate(6, 4)">
+    <path d="M17.5 0C8.5 0 9 3.9 9 3.9L9.02 8H18v2.5H5.5C2.5 10.5 0 12.5 0 17.5c0 5 2.1 7.2 4.9 7.2H8v-3.6c0-4 3.3-7.4 7.4-7.4h9.1c3.3 0 6-2.8 6-6.1V4.2C30.5 1.5 26.5 0 17.5 0zM12.8 2.5a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3z" fill="#1e293b"/>
+    <path d="M18.5 36c9 0 8.5-3.9 8.5-3.9l-.02-4.1H18v-2.5h12.5c3 0 5.5-2 5.5-7 0-5-2.1-7.2-4.9-7.2H28v3.6c0 4-3.3 7.4-7.4 7.4h-9.1c-3.3 0-6 2.8-6 6.1v3.4c0 2.7 4 4.2 13 4.2zm4.7-2.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" fill="#475569"/>
+  </g>
+  <text x="52" y="29" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="19" fill="#0f172a" letter-spacing="-0.3">Python</text>
+</svg>
