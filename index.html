@@ -277,43 +277,40 @@
     </div>
   </section>
 
-    <!-- 4. SECTION 3: MK VISION-INSPIRED PINNED HORIZONTAL PROJECT SHOWCASE -->
-  <section class="showcase-section hscroll" id="projects" data-hscroll="" aria-labelledby="work-heading">
-    <div class="hscroll-sticky">
-      <div class="hscroll-track" id="carousel-track">
-        
-        <!-- Bookend Card 1: Editorial Intro Box -->
-        <div class="hbox hbox-intro">
-          <div>
-            <div class="kicker">THE PROOF · SELECTED WORK</div>
-            <h2 class="showcase-h2" id="work-heading">
-              Selected <span class="serif-accent">applications</span> &amp; platforms <span class="count-pill">03</span>
-            </h2>
-            <p class="carousel-card-desc" style="margin-top: 14px;">
-              A curated selection of modern web applications combining responsive frontend architecture, real-time external APIs, and AI-assisted workflows.
-            </p>
-          </div>
-          <div class="intro-bottom-actions">
-            <a href="#leadgen" class="btn-action-pill">
-              B2B CASE STUDIES ↓
-            </a>
-            <div class="carousel-controls" aria-label="Project Navigation Controls">
-              <button class="carousel-btn" id="prev-btn" aria-label="Previous Project">←</button>
-              <button class="carousel-btn" id="next-btn" aria-label="Next Project">→</button>
+    <!-- 4. SECTION 3: VERTICAL WEB PROJECTS SHOWCASE -->
+  <section class="showcase-section vertical-showcase" id="projects" aria-labelledby="work-heading">
+    <div class="container">
+      <div class="showcase-header">
+        <div class="kicker">THE PROOF · SELECTED WORK</div>
+        <div class="showcase-header-row">
+          <h2 class="showcase-h2" id="work-heading">
+            Selected <span class="serif-accent">applications</span> &amp; platforms <span class="count-pill">03</span>
+          </h2>
+          <a href="#leadgen" class="btn-action-pill">
+            B2B CASE STUDIES ↓
+          </a>
+        </div>
+        <p class="showcase-intro-p">
+          A curated selection of modern web applications combining responsive frontend architecture, real-time external APIs, and AI-assisted workflows.
+        </p>
+      </div>
+
+      <div class="vertical-projects-list">
+        <!-- Project 1: Plexudo (Desktop: Media Left, Content Right) -->
+        <article class="vertical-project-card" data-reveal>
+          <div class="project-media-col">
+            <div class="project-img-wrapper">
+              <img src="assets/images/thumbs/project-plexudo.webp" alt="Plexudo YouTube creator analytics and growth tools interface screenshot" loading="lazy" decoding="async" />
             </div>
           </div>
-        </div>
-
-        <!-- Project Card 1: Plexudo -->
-        <article class="hbox hbox-case" data-cursor="VIEW">
-          <img src="assets/images/thumbs/project-plexudo.webp" alt="Plexudo YouTube creator analytics and growth tools interface screenshot" loading="lazy" decoding="async" />
-          <div class="hbox-floating">
-            <span class="kicker" style="color: var(--mint);">AI &amp; CREATOR ANALYTICS PLATFORM</span>
-            <h3 class="carousel-card-title">Plexudo — YouTube Creator Tools</h3>
-            <p class="carousel-card-desc" style="color: rgba(255, 255, 255, 0.88); margin-bottom: 4px;">
+          <div class="project-content-col">
+            <span class="project-num">PROJECT 01</span>
+            <div class="kicker" style="color: var(--mint);">AI &amp; CREATOR ANALYTICS PLATFORM</div>
+            <h3 class="project-card-title">Plexudo — YouTube Creator Tools</h3>
+            <p class="project-card-desc">
               Creator intelligence platform combining YouTube Data API v3 and Groq AI for real-time video diagnostics, title ideas, and competitor insights.
             </p>
-            <div class="carousel-tags">
+            <div class="project-tags">
               <span class="tag">Python</span>
               <span class="tag">Flask</span>
               <span class="tag">JavaScript</span>
@@ -321,132 +318,237 @@
               <span class="tag">Groq AI</span>
               <span class="tag">Vercel</span>
             </div>
-            <a href="https://plexudo.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-visit-project" style="margin-top: 10px; align-self: flex-start;">
-              LIVE SITE ↗
-            </a>
+            <div class="project-actions">
+              <a href="https://plexudo.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-visit-project">
+                LIVE SITE ↗
+              </a>
+            </div>
           </div>
         </article>
 
-        <!-- Project Card 2: AI Smart Text Utility -->
-        <article class="hbox hbox-case" data-cursor="VIEW">
-          <img src="assets/images/thumbs/project-ai-smart-text.webp" alt="AI Smart Text Utility developer tools interface screenshot" loading="lazy" decoding="async" />
-          <div class="hbox-floating">
-            <span class="kicker" style="color: var(--mint);">DEVELOPER UTILITY &amp; DATA PROCESSING</span>
-            <h3 class="carousel-card-title">AI Smart Text Utility</h3>
-            <p class="carousel-card-desc" style="color: rgba(255, 255, 255, 0.88); margin-bottom: 4px;">
+        <!-- Project 2: AI Smart Text Utility (Desktop: Content Left, Media Right - Alternating!) -->
+        <article class="vertical-project-card is-reversed" data-reveal>
+          <div class="project-media-col">
+            <div class="project-img-wrapper">
+              <img src="assets/images/thumbs/project-ai-smart-text.webp" alt="AI Smart Text Utility developer tools interface screenshot" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <div class="project-content-col">
+            <span class="project-num">PROJECT 02</span>
+            <div class="kicker" style="color: var(--mint);">DEVELOPER UTILITY &amp; DATA PROCESSING</div>
+            <h3 class="project-card-title">AI Smart Text Utility</h3>
+            <p class="project-card-desc">
               In-browser developer transformation suite for text cleanup, regex processing, JSON/CSV conversion, and AI-assisted text transformation.
             </p>
-            <div class="carousel-tags">
+            <div class="project-tags">
               <span class="tag">React</span>
               <span class="tag">TypeScript</span>
               <span class="tag">Next.js</span>
               <span class="tag">Tailwind CSS</span>
             </div>
-            <a href="https://github.com/fahadbwp/ai-text-utility" target="_blank" rel="noopener noreferrer" class="btn-visit-project" style="margin-top: 10px; align-self: flex-start;">
-              GITHUB REPO ↗
-            </a>
+            <div class="project-actions">
+              <a href="https://github.com/fahadbwp/ai-text-utility" target="_blank" rel="noopener noreferrer" class="btn-visit-project">
+                GITHUB REPO ↗
+              </a>
+            </div>
           </div>
         </article>
 
-        <!-- Project Card 3: Haveli Village Restaurant -->
-        <article class="hbox hbox-case" data-cursor="VIEW">
-          <img src="assets/images/thumbs/project-haveli-restaurant.webp" alt="Haveli Village Restaurant online food ordering website screenshot" loading="lazy" decoding="async" />
-          <div class="hbox-floating">
-            <span class="kicker" style="color: var(--mint);">RESTAURANT &amp; DIRECT ORDERING PLATFORM</span>
-            <h3 class="carousel-card-title">Haveli Village Restaurant</h3>
-            <p class="carousel-card-desc" style="color: rgba(255, 255, 255, 0.88); margin-bottom: 4px;">
+        <!-- Project 3: Haveli Village Restaurant (Desktop: Media Left, Content Right) -->
+        <article class="vertical-project-card" data-reveal>
+          <div class="project-media-col">
+            <div class="project-img-wrapper">
+              <img src="assets/images/thumbs/project-haveli-restaurant.webp" alt="Haveli Village Restaurant online food ordering website screenshot" loading="lazy" decoding="async" />
+            </div>
+          </div>
+          <div class="project-content-col">
+            <span class="project-num">PROJECT 03</span>
+            <div class="kicker" style="color: var(--mint);">RESTAURANT &amp; DIRECT ORDERING PLATFORM</div>
+            <h3 class="project-card-title">Haveli Village Restaurant</h3>
+            <p class="project-card-desc">
               Commercial culinary web platform featuring an interactive digital menu, hall booking inquiries, and a direct WhatsApp checkout generator.
             </p>
-            <div class="carousel-tags">
+            <div class="project-tags">
               <span class="tag">React</span>
               <span class="tag">Tailwind CSS</span>
               <span class="tag">WhatsApp API</span>
               <span class="tag">Vercel</span>
             </div>
-            <a href="https://haveli-village-restaurant.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-visit-project" style="margin-top: 10px; align-self: flex-start;">
-              LIVE SITE ↗
-            </a>
+            <div class="project-actions">
+              <a href="https://haveli-village-restaurant.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-visit-project">
+                LIVE SITE ↗
+              </a>
+            </div>
           </div>
         </article>
-
-        <!-- Bookend Card 5: Closing More Box -->
-        <div class="hbox hbox-more">
-          <div>
-            <div class="kicker" style="color: var(--mint);">MORE DELIVERABLES</div>
-            <h3 class="carousel-card-title" style="color: var(--text-light); font-size: clamp(26px, 2.8vw, 38px); margin-bottom: 12px;">
-              Looking for B2B Research &amp; Data Leads?
-            </h3>
-            <p class="carousel-card-desc" style="color: rgba(255, 255, 255, 0.82); line-height: 1.6;">
-              Explore verified Upwork deliverables across E-Commerce brands and Healthcare facilities below.
-            </p>
-          </div>
-          <div class="more-bottom-actions">
-            <a href="#leadgen" class="btn-action-pill">
-              VIEW LEAD GEN CASES ↓
-            </a>
-            <a href="#contact" class="btn-hero-outline">
-              START A CONVERSATION ↗
-            </a>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
-  <!-- 5. COMPLEMENTARY SECTION: VERIFIED LEAD GENERATION CASE STUDIES -->
+  <!-- 5. B2B LEAD GENERATION & DATA RESEARCH CASE STUDIES -->
   <section class="leadgen-section" id="leadgen">
     <div class="container">
-      <div class="kicker">CLIENT WORK &amp; DATA RESEARCH</div>
-      <h2 class="showcase-h2" style="margin-bottom: 8px;">
-        B2B Lead Generation <span class="serif-accent">Case Studies</span>
-      </h2>
-      <p style="font-size: 15px; color: var(--text-muted-dark); max-width: 680px;">
-        Practical examples of targeted prospect discovery, contact verification, and structured data delivery.
+      <div class="kicker">CLIENT WORK &amp; VERIFIED DATA RESEARCH</div>
+      <div class="showcase-header-row">
+        <h2 class="showcase-h2" style="margin-bottom: 8px;">
+          Data Research &amp; Lead Generation <span class="serif-accent">Case Studies</span>
+        </h2>
+        <span class="count-pill">03 VERIFIED SAMPLES</span>
+      </div>
+      <p style="font-size: 15px; color: var(--text-muted-dark); max-width: 720px; line-height: 1.6; margin-bottom: 36px;">
+        Structured research samples, executive prospect discovery, and demographic dataset organization. Previews are sanitized with synthetic placeholders to protect client and personal privacy.
       </p>
 
-      <div class="leadgen-grid">
-        <!-- Lead Gen 1 -->
-        <article class="leadgen-card">
-          <div>
-            <div class="leadgen-thumb" style="margin-bottom: 20px;">
-              <img src="assets/images/thumbs/ecommerce_leads_upwork.webp" alt="E-Commerce & Amazon Seller Lead Generation Data" />
-            </div>
-            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">
-              E-Commerce &amp; Amazon Seller Lead Generation
-            </h3>
-            <p style="font-size: 14.5px; color: var(--text-muted-dark); line-height: 1.6; margin-bottom: 16px;">
-              Identified and verified key decision-makers across e-commerce brands and Amazon sellers to support targeted outreach campaigns using Apollo.io, Hunter.io, and NeverBounce.
-            </p>
+      <div class="leadgen-cards-grid">
+        <!-- Case Study 1: US Manufacturing B2B Lead Research -->
+        <article class="leadgen-card" data-reveal>
+          <div class="leadgen-thumb-box">
+            <img src="assets/images/thumbs/b2b_conveyor_manufacturing_leads.webp" alt="Sanitized spreadsheet preview of US Manufacturing B2B Lead Research" loading="lazy" decoding="async" />
+            <div class="thumb-privacy-badge">ANONYMIZED SAMPLE</div>
+            <button type="button" class="thumb-zoom-btn" data-modal-target="modal-case-1" aria-label="Open full preview of US Manufacturing B2B Lead Research">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
           </div>
-          <div class="carousel-tags">
-            <span class="tag-badge">Apollo.io</span>
-            <span class="tag-badge">Hunter.io</span>
-            <span class="tag-badge">NeverBounce</span>
-            <span class="tag-badge">Google Sheets</span>
+          <div class="leadgen-card-body">
+            <div class="kicker" style="color: var(--mint-dark); font-size: 11px;">US INDUSTRIAL &amp; MANUFACTURING</div>
+            <h3 class="leadgen-title">US Manufacturing B2B Lead Research</h3>
+            <p class="leadgen-desc">
+              Structured B2B research for conveyor and industrial manufacturing companies in the United States, organizing company details, geographic information, decision-maker roles, and business contact fields into a searchable spreadsheet.
+            </p>
+            <div class="leadgen-fields-box">
+              <span class="fields-label">Visible Fields:</span>
+              <span class="fields-list">Company Name, Business Address, City, State, ZIP Code, Contact First and Last Name, Job Title, Business Email</span>
+            </div>
+            <div class="carousel-tags" style="margin-top: 14px;">
+              <span class="tag-badge">B2B Research</span>
+              <span class="tag-badge">Company Research</span>
+              <span class="tag-badge">Data Collection</span>
+              <span class="tag-badge">Spreadsheet Organization</span>
+            </div>
+          </div>
+          <div class="leadgen-card-footer">
+            <button type="button" class="btn-case-modal" data-modal-target="modal-case-1">
+              VIEW CASE STUDY &amp; SPREADSHEET ↗
+            </button>
           </div>
         </article>
 
-        <!-- Lead Gen 2 -->
-        <article class="leadgen-card">
-          <div>
-            <div class="leadgen-thumb" style="margin-bottom: 20px;">
-              <img src="assets/images/thumbs/nursing_facility_leads_upwork.webp" alt="Nursing Facility & Assisted Living Lead Generation Data" />
-            </div>
-            <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 8px;">
-              Nursing Facility &amp; Assisted Living Lead Generation
-            </h3>
-            <p style="font-size: 14.5px; color: var(--text-muted-dark); line-height: 1.6; margin-bottom: 16px;">
-              Researched assisted living organizations and healthcare facilities using LinkedIn Sales Navigator, identifying verified executive contacts (CEOs, Directors, Administrators).
-            </p>
+        <!-- Case Study 2: Executive Contact & Email Research -->
+        <article class="leadgen-card" data-reveal>
+          <div class="leadgen-thumb-box">
+            <img src="assets/images/thumbs/executive_contact_email_research.webp" alt="Sanitized spreadsheet preview of Executive Contact and Email Research" loading="lazy" decoding="async" />
+            <div class="thumb-privacy-badge">ANONYMIZED SAMPLE</div>
+            <button type="button" class="thumb-zoom-btn" data-modal-target="modal-case-2" aria-label="Open full preview of Executive Contact and Email Research">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
           </div>
-          <div class="carousel-tags">
-            <span class="tag-badge">Sales Navigator</span>
-            <span class="tag-badge">Apollo.io</span>
-            <span class="tag-badge">NeverBounce</span>
-            <span class="tag-badge">Excel</span>
+          <div class="leadgen-card-body">
+            <div class="kicker" style="color: var(--mint-dark); font-size: 11px;">PROSPECT &amp; EXECUTIVE DISCOVERY</div>
+            <h3 class="leadgen-title">Executive Contact &amp; Email Research</h3>
+            <p class="leadgen-desc">
+              Executive-level prospect research and contact-list organization, including company websites, professional profile references, job titles, and business email fields.
+            </p>
+            <div class="leadgen-fields-box">
+              <span class="fields-label">Visible Fields:</span>
+              <span class="fields-list">Company, Contact Name, Executive Title, LinkedIn Profile, Business Domain, Email Address</span>
+            </div>
+            <div class="carousel-tags" style="margin-top: 14px;">
+              <span class="tag-badge">Lead Generation</span>
+              <span class="tag-badge">Executive Research</span>
+              <span class="tag-badge">LinkedIn Research</span>
+              <span class="tag-badge">Contact Data Organization</span>
+            </div>
+          </div>
+          <div class="leadgen-card-footer">
+            <button type="button" class="btn-case-modal" data-modal-target="modal-case-2">
+              VIEW CASE STUDY &amp; SPREADSHEET ↗
+            </button>
           </div>
         </article>
+
+        <!-- Case Study 3: Australian Demographic Data Research -->
+        <article class="leadgen-card" data-reveal>
+          <div class="leadgen-thumb-box">
+            <img src="assets/images/thumbs/aus_postcode_demographics_research.webp" alt="Sanitized spreadsheet preview of Australian East Coast Demographic Research" loading="lazy" decoding="async" />
+            <div class="thumb-privacy-badge">ANONYMIZED SAMPLE</div>
+            <button type="button" class="thumb-zoom-btn" data-modal-target="modal-case-3" aria-label="Open full preview of Australian Demographic Data Research">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/></svg>
+            </button>
+          </div>
+          <div class="leadgen-card-body">
+            <div class="kicker" style="color: var(--mint-dark); font-size: 11px;">MARKET &amp; CENSUS INTELLIGENCE</div>
+            <h3 class="leadgen-title">Australian Demographic Data Research</h3>
+            <p class="leadgen-desc">
+              Structured demographic research and spreadsheet organization covering Australian East Coast postcodes, population distribution, income indicators, and household statistics.
+            </p>
+            <div class="leadgen-fields-box">
+              <span class="fields-label">Visible Fields:</span>
+              <span class="fields-list">Postcode, City, Population, Age Group Distribution, Median Weekly Income, Private Dwellings, Household Stats</span>
+            </div>
+            <div class="carousel-tags" style="margin-top: 14px;">
+              <span class="tag-badge">Demographic Research</span>
+              <span class="tag-badge">Data Organization</span>
+              <span class="tag-badge">Google Sheets</span>
+              <span class="tag-badge">Market Research</span>
+            </div>
+          </div>
+          <div class="leadgen-card-footer">
+            <button type="button" class="btn-case-modal" data-modal-target="modal-case-3">
+              VIEW CASE STUDY &amp; SPREADSHEET ↗
+            </button>
+          </div>
+        </article>
+      </div>
+
+      <!-- Additional Verified Upwork Deliverables Row -->
+      <div style="margin-top: 48px; padding-top: 36px; border-top: 1px solid rgba(10, 33, 41, 0.08);">
+        <div class="kicker" style="color: var(--mint-dark); font-size: 11px; margin-bottom: 8px;">UPWORK CONTRACT DELIVERABLES</div>
+        <h4 style="font-size: 18px; font-weight: 700; margin-bottom: 16px; color: var(--text-dark);">
+          Additional Verified Prospect Datasets
+        </h4>
+        <div class="leadgen-grid">
+          <!-- Lead Gen 1 (Existing) -->
+          <article class="leadgen-card">
+            <div>
+              <div class="leadgen-thumb" style="margin-bottom: 18px;">
+                <img src="assets/images/thumbs/ecommerce_leads_upwork.webp" alt="E-Commerce &amp; Amazon Seller Lead Generation Data" loading="lazy" decoding="async" />
+              </div>
+              <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">
+                E-Commerce &amp; Amazon Seller Lead Generation
+              </h3>
+              <p style="font-size: 13.5px; color: var(--text-muted-dark); line-height: 1.6; margin-bottom: 16px;">
+                Identified and verified key decision-makers across e-commerce brands and Amazon sellers to support targeted outreach campaigns using Apollo.io, Hunter.io, and NeverBounce.
+              </p>
+            </div>
+            <div class="carousel-tags">
+              <span class="tag-badge">Apollo.io</span>
+              <span class="tag-badge">Hunter.io</span>
+              <span class="tag-badge">NeverBounce</span>
+              <span class="tag-badge">Google Sheets</span>
+            </div>
+          </article>
+
+          <!-- Lead Gen 2 (Existing) -->
+          <article class="leadgen-card">
+            <div>
+              <div class="leadgen-thumb" style="margin-bottom: 18px;">
+                <img src="assets/images/thumbs/nursing_facility_leads_upwork.webp" alt="Nursing Facility &amp; Assisted Living Lead Generation Data" loading="lazy" decoding="async" />
+              </div>
+              <h3 style="font-size: 18px; font-weight: 700; margin-bottom: 8px;">
+                Nursing Facility &amp; Assisted Living Lead Generation
+              </h3>
+              <p style="font-size: 13.5px; color: var(--text-muted-dark); line-height: 1.6; margin-bottom: 16px;">
+                Researched assisted living organizations and healthcare facilities using LinkedIn Sales Navigator, identifying verified executive contacts (CEOs, Directors, Administrators).
+              </p>
+            </div>
+            <div class="carousel-tags">
+              <span class="tag-badge">Sales Navigator</span>
+              <span class="tag-badge">Apollo.io</span>
+              <span class="tag-badge">NeverBounce</span>
+              <span class="tag-badge">Excel</span>
+            </div>
+          </article>
+        </div>
       </div>
     </div>
   </section>
@@ -705,5 +807,95 @@
     </div>
   </footer>
   <script type="module" src="assets/js/mkvision-interactions.js"></script>
+    <!-- MODAL 1: US Manufacturing B2B Lead Research -->
+  <div id="modal-case-1" class="case-modal" role="dialog" aria-modal="true" aria-labelledby="modal-case-1-title" aria-hidden="true">
+    <div class="case-modal-backdrop"></div>
+    <div class="case-modal-dialog">
+      <div class="case-modal-header">
+        <div>
+          <div class="kicker" style="color: var(--mint-dark); font-size: 11px;">CASE STUDY 01 · SPREADSHEET PREVIEW</div>
+          <h3 id="modal-case-1-title" style="font-size: 22px; font-weight: 700; color: var(--teal);">US Manufacturing B2B Lead Research</h3>
+        </div>
+        <button type="button" class="case-modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="case-modal-img-wrap">
+        <img src="assets/images/thumbs/b2b_conveyor_manufacturing_leads.webp" alt="Full view of sanitized US Manufacturing B2B Lead Research spreadsheet" />
+      </div>
+      <div class="case-modal-meta">
+        <div>
+          <strong style="color: var(--teal); display: block; margin-bottom: 4px;">Research Scope:</strong>
+          <p style="color: var(--text-muted-dark); margin: 0; line-height: 1.5;">Conveyor and industrial equipment manufacturing companies across the United States with verified headquarters and decision-maker contacts.</p>
+        </div>
+        <div>
+          <strong style="color: var(--teal); display: block; margin-bottom: 4px;">Data Columns Captured:</strong>
+          <p style="color: var(--text-muted-dark); margin: 0; line-height: 1.5;">Company Name, Business Address, City, State, ZIP Code, Decision-Maker Name, Job Title, Business Email.</p>
+        </div>
+      </div>
+      <div style="font-size: 12px; color: var(--text-muted-dark); border-top: 1px solid rgba(10,33,41,0.08); padding-top: 10px;">
+        <strong>Privacy Notice:</strong> Contact names and business email addresses in this preview are sanitized with blur/synthetic values to strictly adhere to client confidentiality guidelines.
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: Executive Contact & Email Research -->
+  <div id="modal-case-2" class="case-modal" role="dialog" aria-modal="true" aria-labelledby="modal-case-2-title" aria-hidden="true">
+    <div class="case-modal-backdrop"></div>
+    <div class="case-modal-dialog">
+      <div class="case-modal-header">
+        <div>
+          <div class="kicker" style="color: var(--mint-dark); font-size: 11px;">CASE STUDY 02 · SPREADSHEET PREVIEW</div>
+          <h3 id="modal-case-2-title" style="font-size: 22px; font-weight: 700; color: var(--teal);">Executive Contact &amp; Email Research</h3>
+        </div>
+        <button type="button" class="case-modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="case-modal-img-wrap">
+        <img src="assets/images/thumbs/executive_contact_email_research.webp" alt="Full view of sanitized Executive Contact and Email Research spreadsheet" />
+      </div>
+      <div class="case-modal-meta">
+        <div>
+          <strong style="color: var(--teal); display: block; margin-bottom: 4px;">Research Scope:</strong>
+          <p style="color: var(--text-muted-dark); margin: 0; line-height: 1.5;">Executive-level prospect discovery across UK and European technology, financial, and manufacturing enterprises.</p>
+        </div>
+        <div>
+          <strong style="color: var(--teal); display: block; margin-bottom: 4px;">Data Columns Captured:</strong>
+          <p style="color: var(--text-muted-dark); margin: 0; line-height: 1.5;">Company, Contact Name, Executive Title (CEO, Founder, MD), LinkedIn Profile URL, Business Domain, Email Address.</p>
+        </div>
+      </div>
+      <div style="font-size: 12px; color: var(--text-muted-dark); border-top: 1px solid rgba(10,33,41,0.08); padding-top: 10px;">
+        <strong>Privacy Notice:</strong> Executive names, direct LinkedIn profile URLs, and email addresses are blurred and client-identifying project titles have been anonymized.
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: Australian Demographic Data Research -->
+  <div id="modal-case-3" class="case-modal" role="dialog" aria-modal="true" aria-labelledby="modal-case-3-title" aria-hidden="true">
+    <div class="case-modal-backdrop"></div>
+    <div class="case-modal-dialog">
+      <div class="case-modal-header">
+        <div>
+          <div class="kicker" style="color: var(--mint-dark); font-size: 11px;">CASE STUDY 03 · SPREADSHEET PREVIEW</div>
+          <h3 id="modal-case-3-title" style="font-size: 22px; font-weight: 700; color: var(--teal);">Australian Demographic Data Research</h3>
+        </div>
+        <button type="button" class="case-modal-close" aria-label="Close modal">✕</button>
+      </div>
+      <div class="case-modal-img-wrap">
+        <img src="assets/images/thumbs/aus_postcode_demographics_research.webp" alt="Full view of Australian East Coast Demographic Research spreadsheet" />
+      </div>
+      <div class="case-modal-meta">
+        <div>
+          <strong style="color: var(--teal); display: block; margin-bottom: 4px;">Research Scope:</strong>
+          <p style="color: var(--text-muted-dark); margin: 0; line-height: 1.5;">Geographic and socioeconomic dataset compilation covering Australian East Coast postcodes (Sydney, Melbourne, Brisbane, Gold Coast, Newcastle).</p>
+        </div>
+        <div>
+          <strong style="color: var(--teal); display: block; margin-bottom: 4px;">Data Columns Captured:</strong>
+          <p style="color: var(--text-muted-dark); margin: 0; line-height: 1.5;">Postcode, City, Adult Population, Age Groups (18-65+), Median Weekly Income, Total Private Dwellings, Number of Families, People/Children per household.</p>
+        </div>
+      </div>
+      <div style="font-size: 12px; color: var(--text-muted-dark); border-top: 1px solid rgba(10,33,41,0.08); padding-top: 10px;">
+        <strong>Data Integrity Notice:</strong> Data structured for market research and location intelligence. Browser headers, sheet IDs, and account avatars removed for portfolio presentation.
+      </div>
+    </div>
+  </div>
+
   </body>
 </html>
