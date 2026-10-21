@@ -274,96 +274,119 @@
     </div>
   </section>
 
-  <!-- 4. SECTION 3: LARGE IMAGE-LED HORIZONTAL PROJECT SHOWCASE (Crisp White Background) -->
-  <section class="showcase-section" id="projects">
-    <div class="container">
-      <div class="showcase-header">
-        <div class="showcase-title-wrap">
-          <div class="kicker">FEATURED WEB APPLICATIONS</div>
-          <h2 class="showcase-h2">
-            Selected <span class="serif-accent">applications</span> &amp; platforms <span class="count-pill">03</span>
-          </h2>
-        </div>
-        <div class="carousel-controls">
-          <button class="carousel-btn" id="prev-btn" aria-label="Previous Project">←</button>
-          <button class="carousel-btn" id="next-btn" aria-label="Next Project">→</button>
-        </div>
-      </div>
-
-      <!-- HORIZONTAL CAROUSEL TRACK -->
-      <div class="showcase-carousel" id="carousel-track">
-        <!-- Project Card 1: Plexudo -->
-        <article class="carousel-card">
-          <div class="carousel-image-frame">
-            <img src="assets/images/thumbs/project-plexudo.webp" alt="Plexudo YouTube creator analytics and growth tools interface screenshot" />
+    <!-- 4. SECTION 3: MK VISION-INSPIRED PINNED HORIZONTAL PROJECT SHOWCASE -->
+  <section class="showcase-section hscroll" id="projects" data-hscroll="" aria-labelledby="work-heading">
+    <div class="hscroll-sticky">
+      <div class="hscroll-track" id="carousel-track">
+        
+        <!-- Bookend Card 1: Editorial Intro Box -->
+        <div class="hbox hbox-intro">
+          <div>
+            <div class="kicker">THE PROOF · SELECTED WORK</div>
+            <h2 class="showcase-h2" id="work-heading">
+              Selected <span class="serif-accent">applications</span> &amp; platforms <span class="count-pill">03</span>
+            </h2>
+            <p class="carousel-card-desc" style="margin-top: 14px;">
+              A curated selection of modern web applications combining responsive frontend architecture, real-time external APIs, and AI-assisted workflows.
+            </p>
           </div>
-          <div class="carousel-card-meta">
-            <div>
-              <h3 class="carousel-card-title">Plexudo — YouTube Creator Tools</h3>
-              <p class="carousel-card-desc">
-                Creator platform combining YouTube Data API v3 and Groq AI for video diagnostics, title ideas, and competitor channel insights.
-              </p>
-              <div class="carousel-tags">
-                <span class="tag-badge">Python</span>
-                <span class="tag-badge">Flask</span>
-                <span class="tag-badge">JavaScript</span>
-                <span class="tag-badge">YouTube API</span>
-                <span class="tag-badge">Vercel</span>
-              </div>
+          <div class="intro-bottom-actions">
+            <a href="#leadgen" class="btn-action-pill" style="align-self: flex-start;">
+              B2B CASE STUDIES ↓
+            </a>
+            <div class="carousel-controls" aria-label="Project Navigation Controls">
+              <button class="carousel-btn" id="prev-btn" aria-label="Previous Project">←</button>
+              <button class="carousel-btn" id="next-btn" aria-label="Next Project">→</button>
             </div>
-            <a href="https://plexudo.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-visit-project">
+          </div>
+        </div>
+
+        <!-- Project Card 1: Plexudo -->
+        <article class="hbox hbox-case" data-cursor="VIEW">
+          <img src="assets/images/thumbs/project-plexudo.webp" alt="Plexudo YouTube creator analytics and growth tools interface screenshot" loading="lazy" decoding="async" />
+          <div class="hbox-floating">
+            <span class="kicker" style="color: var(--mint);">AI &amp; CREATOR ANALYTICS PLATFORM</span>
+            <h3 class="carousel-card-title">Plexudo — YouTube Creator Tools</h3>
+            <p class="carousel-card-desc" style="color: rgba(255, 255, 255, 0.88); margin-bottom: 4px;">
+              Creator intelligence platform combining YouTube Data API v3 and Groq AI for real-time video diagnostics, title ideas, and competitor insights.
+            </p>
+            <div class="carousel-tags">
+              <span class="tag">Python</span>
+              <span class="tag">Flask</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">YouTube API</span>
+              <span class="tag">Groq AI</span>
+              <span class="tag">Vercel</span>
+            </div>
+            <a href="https://plexudo.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-visit-project" style="margin-top: 10px; align-self: flex-start;">
               LIVE SITE ↗
             </a>
           </div>
         </article>
 
         <!-- Project Card 2: AI Smart Text Utility -->
-        <article class="carousel-card">
-          <div class="carousel-image-frame">
-            <img src="assets/images/thumbs/project-ai-smart-text.webp" alt="AI Smart Text Utility developer tools interface screenshot" />
-          </div>
-          <div class="carousel-card-meta">
-            <div>
-              <h3 class="carousel-card-title">AI Smart Text Utility</h3>
-              <p class="carousel-card-desc">
-                Open-source frontend developer utility for text cleanup, formatting, JSON/CSV conversion, and AI-assisted text transformation.
-              </p>
-              <div class="carousel-tags">
-                <span class="tag-badge">React</span>
-                <span class="tag-badge">TypeScript</span>
-                <span class="tag-badge">Next.js</span>
-                <span class="tag-badge">Tailwind CSS</span>
-              </div>
+        <article class="hbox hbox-case" data-cursor="VIEW">
+          <img src="assets/images/thumbs/project-ai-smart-text.webp" alt="AI Smart Text Utility developer tools interface screenshot" loading="lazy" decoding="async" />
+          <div class="hbox-floating">
+            <span class="kicker" style="color: var(--mint);">DEVELOPER UTILITY &amp; DATA PROCESSING</span>
+            <h3 class="carousel-card-title">AI Smart Text Utility</h3>
+            <p class="carousel-card-desc" style="color: rgba(255, 255, 255, 0.88); margin-bottom: 4px;">
+              In-browser developer transformation suite for text cleanup, regex processing, JSON/CSV conversion, and AI-assisted text transformation.
+            </p>
+            <div class="carousel-tags">
+              <span class="tag">React</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Next.js</span>
+              <span class="tag">Tailwind CSS</span>
             </div>
-            <a href="https://github.com/fahadbwp/ai-text-utility" target="_blank" rel="noopener noreferrer" class="btn-visit-project">
+            <a href="https://github.com/fahadbwp/ai-text-utility" target="_blank" rel="noopener noreferrer" class="btn-visit-project" style="margin-top: 10px; align-self: flex-start;">
               GITHUB REPO ↗
             </a>
           </div>
         </article>
 
         <!-- Project Card 3: Haveli Village Restaurant -->
-        <article class="carousel-card">
-          <div class="carousel-image-frame">
-            <img src="assets/images/thumbs/project-haveli-restaurant.webp" alt="Haveli Village Restaurant online food ordering website screenshot" />
-          </div>
-          <div class="carousel-card-meta">
-            <div>
-              <h3 class="carousel-card-title">Haveli Village Restaurant</h3>
-              <p class="carousel-card-desc">
-                Bespoke restaurant web platform featuring an interactive digital menu, hall booking inquiry, and direct WhatsApp checkout generator.
-              </p>
-              <div class="carousel-tags">
-                <span class="tag-badge">React</span>
-                <span class="tag-badge">Tailwind CSS</span>
-                <span class="tag-badge">WhatsApp API</span>
-                <span class="tag-badge">Vercel</span>
-              </div>
+        <article class="hbox hbox-case" data-cursor="VIEW">
+          <img src="assets/images/thumbs/project-haveli-restaurant.webp" alt="Haveli Village Restaurant online food ordering website screenshot" loading="lazy" decoding="async" />
+          <div class="hbox-floating">
+            <span class="kicker" style="color: var(--mint);">RESTAURANT &amp; DIRECT ORDERING PLATFORM</span>
+            <h3 class="carousel-card-title">Haveli Village Restaurant</h3>
+            <p class="carousel-card-desc" style="color: rgba(255, 255, 255, 0.88); margin-bottom: 4px;">
+              Commercial culinary web platform featuring an interactive digital menu, hall booking inquiries, and a direct WhatsApp checkout generator.
+            </p>
+            <div class="carousel-tags">
+              <span class="tag">React</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">WhatsApp API</span>
+              <span class="tag">Vercel</span>
             </div>
-            <a href="https://haveli-village-restaurant.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-visit-project">
+            <a href="https://haveli-village-restaurant.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-visit-project" style="margin-top: 10px; align-self: flex-start;">
               LIVE SITE ↗
             </a>
           </div>
         </article>
+
+        <!-- Bookend Card 5: Closing More Box -->
+        <div class="hbox hbox-more">
+          <div>
+            <div class="kicker" style="color: var(--mint);">MORE DELIVERABLES</div>
+            <h3 class="carousel-card-title" style="color: var(--text-light); font-size: clamp(26px, 2.8vw, 38px); margin-bottom: 12px;">
+              Looking for B2B Research &amp; Data Leads?
+            </h3>
+            <p class="carousel-card-desc" style="color: rgba(255, 255, 255, 0.82); line-height: 1.6;">
+              Explore verified Upwork deliverables across E-Commerce brands and Healthcare facilities below.
+            </p>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px; align-items: flex-start;">
+            <a href="#leadgen" class="btn-action-pill">
+              VIEW LEAD GEN CASES ↓
+            </a>
+            <a href="#contact" class="btn-hero-outline" style="border-color: rgba(255,255,255,0.3); font-size: 13px;">
+              START A CONVERSATION ↗
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>

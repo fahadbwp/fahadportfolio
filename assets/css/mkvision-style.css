@@ -359,22 +359,135 @@
       line-height: 1.7;
     }
 
-    /* 4. SECTION 3: LARGE IMAGE-LED HORIZONTAL PROJECT SHOWCASE (Crisp White Background) */
-    .showcase-section {
+    /* ==========================================================================
+   4. SECTION 3: MK VISION-INSPIRED PINNED HORIZONTAL PROJECT SHOWCASE
+   ========================================================================== */
+    .showcase-section.hscroll {
+      position: relative;
       background: var(--white);
       color: var(--text-dark);
-      padding: clamp(80px, 11vw, 150px) 0;
-      overflow: hidden;
+      padding: 0;
+      overflow: visible;
       scroll-margin-top: 100px;
     }
 
-    .showcase-header {
+    .hscroll-sticky {
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      height: 100svh;
       display: flex;
+      align-items: center;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .hscroll-track {
+      display: flex;
+      gap: clamp(16px, 1.8vw, 32px);
+      padding-inline: clamp(24px, 4.5vw, 64px);
+      will-change: transform;
+      align-items: center;
+    }
+
+    .hbox {
+      flex: none;
+      position: relative;
+      height: min(76vh, 680px);
+      border-radius: clamp(20px, 2.2vw, 36px);
+      overflow: hidden;
+    }
+
+    .hbox-intro {
+      width: clamp(300px, 28vw, 460px);
+      background: var(--offwhite);
+      border: 1px solid rgba(10, 33, 41, 0.08);
+      padding: clamp(28px, 3vw, 44px);
+      display: flex;
+      flex-direction: column;
       justify-content: space-between;
-      align-items: flex-end;
-      margin-bottom: 44px;
-      flex-wrap: wrap;
-      gap: 20px;
+      box-shadow: 0 10px 32px rgba(10, 33, 41, 0.04);
+    }
+
+    .intro-bottom-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .hbox-more {
+      width: clamp(280px, 26vw, 420px);
+      background: var(--teal);
+      border: 1px solid var(--teal-border);
+      padding: clamp(28px, 3vw, 44px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      color: var(--text-light);
+      box-shadow: 0 16px 44px rgba(0, 0, 0, 0.3);
+    }
+
+    .hbox-case {
+      width: clamp(340px, 54vw, 920px);
+      display: block;
+      position: relative;
+      background: #06171D;
+      border-radius: clamp(20px, 2.2vw, 36px);
+      overflow: hidden;
+      box-shadow: 0 12px 36px rgba(10, 33, 41, 0.08);
+      transition: box-shadow 0.45s ease-in-out, transform 0.45s var(--ease);
+      cursor: pointer;
+    }
+
+    .hbox-case:hover {
+      box-shadow: inset 0 0 0 4px var(--mint), 0 20px 48px rgba(10, 33, 41, 0.16);
+      transform: translateY(-4px);
+    }
+
+    .hbox-case img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.05);
+      transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+      display: block;
+    }
+
+    .hbox-case:hover img {
+      transform: scale(1.00);
+    }
+
+    .hbox-case::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(179deg, rgba(10, 33, 41, 0.15) 20%, rgba(6, 23, 29, 0.88) 85%);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .hbox-floating {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+      padding: clamp(24px, 3vw, 44px);
+      color: var(--text-light);
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      pointer-events: auto;
+    }
+
+    .hbox-floating .carousel-card-title {
+      color: var(--text-light);
+      font-size: clamp(22px, 2.4vw, 34px);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-bottom: 2px;
     }
 
     .kicker {
@@ -387,7 +500,7 @@
     }
 
     .showcase-h2 {
-      font-size: clamp(32px, 4.2vw, 58px);
+      font-size: clamp(30px, 3.8vw, 54px);
       font-weight: 700;
       line-height: 1.12;
       letter-spacing: -0.02em;
@@ -410,117 +523,25 @@
       margin-left: 8px;
     }
 
-    .showcase-carousel {
-      display: flex;
-      gap: clamp(20px, 3vw, 36px);
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      padding-bottom: 20px;
-      -webkit-overflow-scrolling: touch;
-      scrollbar-width: none;
-    }
-
-    .showcase-carousel::-webkit-scrollbar {
-      display: none;
-    }
-
-    .carousel-card {
-      flex: 0 0 clamp(290px, 80vw, 860px);
-      scroll-snap-align: start;
-      background: var(--offwhite);
-      border: 1px solid rgba(10, 33, 41, 0.08);
-      border-radius: var(--radius-lg);
-      padding: clamp(20px, 3vw, 40px);
-      display: flex;
-      flex-direction: column;
-      gap: 22px;
-      box-shadow: 0 10px 32px rgba(10, 33, 41, 0.04);
-      transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
-    }
-
-    .carousel-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 18px 42px rgba(10, 33, 41, 0.08);
-    }
-
-    .carousel-image-frame {
-      width: 100%;
-      height: clamp(200px, 32vw, 440px);
-      border-radius: var(--radius-md);
-      overflow: hidden;
-      border: 1px solid rgba(10, 33, 41, 0.08);
-      background: #000;
-    }
-
-    .carousel-image-frame img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transition: transform 0.4s var(--ease);
-    }
-
-    .carousel-card:hover .carousel-image-frame img {
-      transform: scale(1.02);
-    }
-
-    .carousel-card-meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .carousel-card-title {
-      font-size: clamp(22px, 2.4vw, 32px);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      margin-bottom: 6px;
-    }
-
-    .carousel-card-desc {
-      font-size: 15px;
-      color: var(--text-muted-dark);
-      line-height: 1.6;
-      max-width: 600px;
-      margin-bottom: 14px;
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      border-radius: var(--radius-pill);
+      padding: 0.36em 0.9em;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--text-light);
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
     }
 
     .carousel-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 6px;
-    }
-
-    .tag-badge {
-      padding: 5px 12px;
-      background: rgba(10, 33, 41, 0.05);
-      border: 1px solid rgba(10, 33, 41, 0.08);
-      border-radius: var(--radius-pill);
-      font-size: 12px;
-      font-weight: 600;
-      color: var(--text-dark);
-    }
-
-    .btn-visit-project {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 10px 22px;
-      background: var(--teal);
-      color: var(--white);
-      border-radius: var(--radius-pill);
-      font-size: 13px;
-      font-weight: 700;
-      letter-spacing: 0.03em;
-      white-space: nowrap;
-      transition: all 0.25s var(--ease);
-    }
-
-    .btn-visit-project:hover {
-      background: var(--teal-hover);
-      transform: translateY(-2px);
     }
 
     .carousel-controls {
@@ -550,7 +571,8 @@
       border-color: var(--teal);
     }
 
-    /* 5. COMPLEMENTARY SECTION: VERIFIED LEAD GENERATION CASE STUDIES */
+
+/* 5. COMPLEMENTARY SECTION: VERIFIED LEAD GENERATION CASE STUDIES */
     .leadgen-section {
       background: var(--offwhite);
       scroll-margin-top: 100px;
@@ -1016,12 +1038,8 @@
         padding: 0 10px;
         font-size: 12px;
       }
-      
-    .action-short {
-      display: none;
-    }
 
-    .btn-action-pill {
+      .btn-action-pill {
         height: 42px;
         padding: 0 12px;
         font-size: 11px;
@@ -1122,3 +1140,62 @@
   padding-top: 20px;
   border-top: 1px solid var(--teal-border);
 }
+
+
+    /* MK Vision Pinned Horizontal Gallery Responsive Adaptation (<=800px) */
+    @media (max-width: 800px) {
+      .showcase-section.hscroll {
+        height: auto !important;
+        padding: clamp(60px, 8vw, 100px) 0;
+        overflow: hidden;
+      }
+      .hscroll-sticky {
+        position: relative;
+        height: auto;
+        overflow: visible;
+      }
+      .hscroll-track {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        transform: none !important;
+        padding-inline: clamp(16px, 4vw, 24px);
+        padding-bottom: 16px;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        align-items: stretch;
+      }
+      .hscroll-track::-webkit-scrollbar {
+        display: none;
+      }
+      .hbox {
+        height: clamp(480px, 66vh, 600px);
+        scroll-snap-align: start;
+      }
+      .hbox-intro {
+        width: clamp(280px, 80vw, 380px);
+      }
+      .hbox-more {
+        width: clamp(280px, 80vw, 380px);
+      }
+      .hbox-case {
+        width: clamp(280px, 84vw, 480px);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .showcase-section.hscroll {
+        height: auto !important;
+      }
+      .hscroll-sticky {
+        position: relative;
+        height: auto;
+      }
+      .hscroll-track {
+        overflow-x: auto;
+        transform: none !important;
+        scroll-snap-type: x mandatory;
+      }
+      .hbox-case img {
+        transform: none !important;
+      }
+    }
