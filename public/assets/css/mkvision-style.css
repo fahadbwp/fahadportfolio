@@ -625,14 +625,56 @@
     }
 
     .count-pill {
-      display: inline-block;
-      font-size: 13px;
-      font-weight: 700;
-      padding: 3px 10px;
-      background: var(--gray-light);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 800;
+      line-height: 1;
+      padding: 3px 9px;
+      background: var(--mint);
+      color: var(--teal) !important;
       border-radius: var(--radius-pill);
       vertical-align: middle;
       margin-left: 8px;
+      letter-spacing: 0.04em;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    .showcase-h2 .count-pill {
+      font-size: 14px;
+      padding: 4px 12px;
+      background: var(--teal);
+      color: var(--mint) !important;
+      vertical-align: middle;
+    }
+
+    .footer-card-nav a .count-pill {
+      font-size: 11px;
+      padding: 2px 8px;
+      background: var(--mint);
+      color: var(--teal) !important;
+      vertical-align: middle;
+    }
+
+    .footer-card-nav a:hover .count-pill {
+      background: #FFFFFF;
+      color: var(--teal) !important;
+    }
+
+    .mobile-drawer-links a .count-pill {
+      font-size: 14px;
+      padding: 4px 11px;
+      background: var(--mint);
+      color: var(--teal) !important;
+      vertical-align: middle;
+      transform: translateY(-2px);
+    }
+
+    .mobile-drawer-links a:hover .count-pill,
+    .mobile-drawer-links a:focus-visible .count-pill {
+      background: #FFFFFF;
+      color: var(--teal) !important;
     }
 
     .tag {
