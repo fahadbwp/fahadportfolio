@@ -271,4 +271,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
+  // 6. Smooth Back-to-Top Interaction
+  const backToTopBtn = document.getElementById('back-to-top');
+  backToTopBtn?.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
 });
+
