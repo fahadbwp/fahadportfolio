@@ -1,10 +1,12 @@
 // assets/js/mkvision-interactions.js
+// MK Vision Studio inspired interactions: Drawer navigation, carousel controls, FAQ accordion
+
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Mobile Drawer Navigation
   const menuToggle = document.getElementById('menu-toggle');
   const drawer = document.getElementById('mobile-drawer');
   const drawerClose = document.getElementById('drawer-close');
-  const drawerLinks = document.querySelectorAll('.mobile-drawer-links a');
+  const drawerLinks = document.querySelectorAll('.mobile-drawer-links a, .mobile-drawer-footer a');
 
   function openDrawer() {
     if (!drawer) return;
@@ -22,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle?.focus();
   }
 
-  menuToggle?.addEventListener('click', () => {
+  menuToggle?.addEventListener('click', (e) => {
+    e.stopPropagation();
     if (drawer?.classList.contains('is-active')) {
       closeDrawer();
     } else {
@@ -44,58 +47,34 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 2. Smooth Section Scrolling with Offset for Floating Header
-  const headerOffset = 90;
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-      const targetId = this.getAttribute('href');
-      if (targetId === '#') return;
-      
-      const targetElement = document.querySelector(targetId);
-      if (targetElement) {
-        e.preventDefault();
-        const elementPosition = targetElement.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  // 2. Horizontal Project Carousel Track Controls
+  const track = document.getElementById('carousel-track');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
 
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
-
-        // Update URL hash without jump
-        if (history.pushState) {
-          history.pushState(null, null, targetId);
-        } else {
-          location.hash = targetId;
-        }
-      }
+  if (track && prevBtn && nextBtn) {
+    prevBtn.addEventListener('click', () => {
+      const scrollAmount = track.clientWidth * 0.75;
+      track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
     });
-  });
 
-  // 3. Active Nav Link Intersection Observer
-  const sections = document.querySelectorAll('section[id], footer[id]');
-  const navLinks = document.querySelectorAll('.nav-links a');
+    nextBtn.addEventListener('click', () => {
+      const scrollAmount = track.clientWidth * 0.75;
+      track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+  }
 
-  const observerOptions = {
-    root: null,
-    rootMargin: '-20% 0px -60% 0px',
-    threshold: 0
-  };
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const id = entry.target.getAttribute('id');
-        navLinks.forEach(link => {
-          if (link.getAttribute('href') === `#${id}`) {
-            link.style.color = 'var(--text-white)';
-          } else {
-            link.style.color = 'var(--text-muted)';
+  // 3. Editorial FAQ Accordion: Clean Single-Open Behavior
+  const faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(item => {
+    item.addEventListener('toggle', () => {
+      if (item.open) {
+        faqItems.forEach(other => {
+          if (other !== item && other.open) {
+            other.removeAttribute('open');
           }
         });
       }
     });
-  }, observerOptions);
-
-  sections.forEach(sec => observer.observe(sec));
+  });
 });
