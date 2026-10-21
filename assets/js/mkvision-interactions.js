@@ -47,20 +47,56 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // 2. Horizontal Project Carousel Track Controls
+  // 2. Horizontal Project Carousel Track Controls with Full Cyclic Navigation & Card Snapping
   const track = document.getElementById('carousel-track');
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
 
   if (track && prevBtn && nextBtn) {
-    prevBtn.addEventListener('click', () => {
-      const scrollAmount = track.clientWidth * 0.75;
-      track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-    });
+    const cards = Array.from(track.querySelectorAll('.carousel-card'));
+
+    function getActiveIndex() {
+      const trackLeft = track.getBoundingClientRect().left;
+      let closestIdx = 0;
+      let minDistance = Infinity;
+
+      cards.forEach((card, idx) => {
+        const cardBox = card.getBoundingClientRect();
+        const distance = Math.abs(cardBox.left - trackLeft);
+        if (distance < minDistance) {
+          minDistance = distance;
+          closestIdx = idx;
+        }
+      });
+      return closestIdx;
+    }
+
+    function scrollToCard(index, behavior = 'smooth') {
+      if (index < 0) index = cards.length - 1;
+      if (index >= cards.length) index = 0;
+      const targetCard = cards[index];
+      if (!targetCard) return;
+
+      const trackRect = track.getBoundingClientRect();
+      const targetRect = targetCard.getBoundingClientRect();
+      const scrollOffset = targetRect.left - trackRect.left + track.scrollLeft;
+
+      track.scrollTo({
+        left: scrollOffset,
+        behavior: behavior
+      });
+    }
 
     nextBtn.addEventListener('click', () => {
-      const scrollAmount = track.clientWidth * 0.75;
-      track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      const current = getActiveIndex();
+      const nextIndex = (current + 1) % cards.length;
+      scrollToCard(nextIndex);
+    });
+
+    prevBtn.addEventListener('click', () => {
+      const current = getActiveIndex();
+      const prevIndex = (current - 1 + cards.length) % cards.length;
+      scrollToCard(prevIndex);
     });
   }
 
