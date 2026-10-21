@@ -280,5 +280,44 @@ document.addEventListener('DOMContentLoaded', () => {
       behavior: 'smooth'
     });
   });
+
+  // 7. Stacking Cards Depth Controller (Desktop & Mobile)
+  function initStackingCards() {
+    const cards = document.querySelectorAll('.leadgen-vertical-card');
+    if (!cards.length) return;
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      return;
+    }
+
+    function updateCardStack() {
+      for (let i = 0; i < cards.length - 1; i++) {
+        const card = cards[i];
+        const nextCard = cards[i + 1];
+        const rect = card.getBoundingClientRect();
+        const nextRect = nextCard.getBoundingClientRect();
+
+        // Calculate overlap
+        const overlap = rect.bottom - nextRect.top;
+        if (overlap > 0) {
+          const progress = Math.min(Math.max(overlap / rect.height, 0), 1);
+          const scale = 1 - (progress * 0.035);
+          const brightness = 1 - (progress * 0.12);
+          card.style.transform = `scale(${scale.toFixed(4)})`;
+          card.style.filter = `brightness(${brightness.toFixed(4)})`;
+        } else {
+          card.style.transform = '';
+          card.style.filter = '';
+        }
+      }
+    }
+
+    window.addEventListener('scroll', updateCardStack, { passive: true });
+    window.addEventListener('resize', updateCardStack, { passive: true });
+    updateCardStack();
+  }
+
+  initStackingCards();
+
 });
 
