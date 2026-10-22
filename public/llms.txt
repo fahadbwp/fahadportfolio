@@ -9,6 +9,7 @@
 * Location: Bahawalpur, Punjab, Pakistan
 
 ## Professional Identity & Core Competencies
+* **Dedicated B2B Lead Gen Landing Page**: https://fahadsaleembwp.vercel.app/b2b-lead-generation/
 * **AI Data Collection & Annotation**: Video data collection, image annotation, object tagging, and AI dataset labeling.
 * **B2B Lead Generation & Data Entry**: Prospect research, decision-maker discovery (Founders, CMOs, Directors), email verification, and structured data entry in Excel & Google Sheets.
 * **Prospecting Tools**: LinkedIn Sales Navigator, Apollo.io, Hunter.io, NeverBounce.
