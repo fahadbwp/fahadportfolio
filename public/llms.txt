@@ -1,6 +1,6 @@
 # Fahad Saleem
 
-> Personal portfolio and professional profile of Fahad Saleem, specializing in AI data collection & annotation, B2B lead generation, and AI-assisted web development based in Bahawalpur, Pakistan.
+> Professional profile of Fahad Saleem, specializing in B2B lead generation & prospect research, spreadsheet data research & organization, and custom web development.
 
 * Canonical URL: https://fahadsaleembwp.vercel.app/
 * Primary GitHub: https://github.com/fahadbwp
