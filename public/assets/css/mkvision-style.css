@@ -1669,12 +1669,13 @@
     }
 
     /* 9. SECTION 8: AUTHENTIC, ACCESSIBLE FAQ ACCORDION (White Section) */
+    #faq,
     .faq-section {
       background: var(--white);
       color: var(--text-dark);
       padding: clamp(80px, 11vw, 150px) 0;
       position: relative;
-      scroll-margin-top: 100px;
+      scroll-margin-top: clamp(100px, 12vw, 130px);
       border-top: 1px solid rgba(10, 33, 41, 0.08);
       border-bottom: 1px solid rgba(10, 33, 41, 0.08);
     }
