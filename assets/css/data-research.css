@@ -4,33 +4,392 @@
    Fully responsive across 320px, 375px, 390px, 430px, 768px, 1366px, 1440px+
    ========================================================================== */
 
-/* 1. Back to Main Portfolio Button */
-.btn-back-portfolio {
+/* 1. Hero Unified Breadcrumb Navigation (Replaces duplicate Back Button + Breadcrumb) */
+.dr-hero-breadcrumb {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  background: rgba(3, 226, 156, 0.08);
-  border: 1px solid rgba(3, 226, 156, 0.35);
-  color: var(--mint);
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 auto clamp(14px, 2.5vw, 22px);
+  padding: 6px 16px;
+  background: rgba(3, 226, 156, 0.06);
+  border: 1px solid rgba(3, 226, 156, 0.25);
   border-radius: var(--radius-pill);
-  transition: all 0.25s var(--ease);
-  margin-bottom: 14px;
+  text-align: center;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
-.btn-back-portfolio:hover,
-.btn-back-portfolio:focus-visible {
+@media (min-width: 768px) {
+  .dr-hero-breadcrumb {
+    font-size: 15px;
+    padding: 7px 20px;
+  }
+}
+
+.dr-hero-breadcrumb .dr-breadcrumb-link {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color 0.2s var(--ease), transform 0.2s var(--ease);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 6px;
+  border-radius: var(--radius-sm, 4px);
+}
+
+.dr-hero-breadcrumb .dr-breadcrumb-link:hover {
+  color: var(--mint);
+  transform: translateX(-2px);
+}
+
+.dr-hero-breadcrumb .dr-breadcrumb-link:focus-visible {
+  outline: 2px solid var(--mint);
+  outline-offset: 3px;
+  color: var(--mint);
+}
+
+.dr-hero-breadcrumb .dr-breadcrumb-sep {
+  color: rgba(255, 255, 255, 0.35);
+  font-size: 13px;
+  user-select: none;
+}
+
+.dr-hero-breadcrumb .dr-breadcrumb-current {
+  color: var(--mint);
+  font-weight: 700;
+  padding: 2px 6px;
+}
+
+/* 2. Hero Mobile Polish & Responsive Spacing */
+.hero-section {
+  padding-top: clamp(68px, 10vw, 86px);
+  padding-bottom: clamp(40px, 6vw, 68px);
+}
+
+.hero-title {
+  font-size: clamp(26px, 6.2vw, 54px);
+  line-height: 1.15;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  letter-spacing: -0.02em;
+}
+
+@media (max-width: 360px) {
+  .hero-title {
+    font-size: clamp(23px, 7.2vw, 28px);
+  }
+  .hero-sub {
+    font-size: 13px;
+  }
+}
+
+.hero-sub {
+  font-size: clamp(14px, 2vw, 17px);
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* Hero CTA buttons responsive stacking */
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+  .hero-actions .btn-action-pill,
+  .hero-actions .btn-hero-outline {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 48px;
+    font-size: 13px;
+  }
+}
+
+/* Sourcing Stack Badges */
+.b2b-tools-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 8px 10px;
+  margin-top: clamp(24px, 3.5vw, 36px);
+  padding-top: clamp(18px, 2.5vw, 26px);
+  border-top: 1px solid rgba(3, 226, 156, 0.15);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.b2b-tool-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(15, 46, 58, 0.75);
+  border: 1px solid var(--teal-border);
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-light);
+  box-sizing: border-box;
+}
+
+/* 3. Fully Opaque Mobile Drawer Navigation (BUG 3 Fix) */
+.mobile-drawer {
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  height: 100dvh !important;
+  background: #051f1d !important; /* 100% solid, fully opaque dark emerald */
+  z-index: 99999 !important;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.9) !important;
+  overscroll-behavior: contain !important;
+  -webkit-overflow-scrolling: touch;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+}
+
+.mobile-drawer:not(.is-active) {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.mobile-drawer.is-active {
+  display: flex !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  transform: translateY(0);
+  opacity: 1;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  overflow-y: auto !important;
+  padding: clamp(20px, 4vw, 36px) clamp(16px, 4vw, 32px) !important;
+  box-sizing: border-box !important;
+}
+
+.mobile-drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(3, 226, 156, 0.2);
+  flex-shrink: 0;
+}
+
+.mobile-drawer-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(3, 226, 156, 0.3);
+  color: #FFFFFF;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.mobile-drawer-close:hover,
+.mobile-drawer-close:focus-visible {
   background: var(--mint);
   color: var(--teal);
-  transform: translateY(-2px);
   border-color: var(--mint);
-  box-shadow: 0 4px 16px rgba(3, 226, 156, 0.25);
+  outline: none;
 }
 
-/* 2. Quality Assurance & Accuracy Standards Grid (Dark Emerald Section) */
+.mobile-drawer-links {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(10px, 2vh, 18px);
+  list-style: none;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.mobile-drawer-links a {
+  font-size: clamp(20px, 4.8vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+  padding: 4px 0;
+}
+
+.mobile-drawer-links a:hover,
+.mobile-drawer-links a:focus-visible {
+  color: var(--mint);
+  transform: translateX(6px);
+  outline: none;
+}
+
+.mobile-drawer-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(3, 226, 156, 0.2);
+  flex-shrink: 0;
+}
+
+/* 4. Fully Opaque Case Study Lightbox Modals (BUG 2 Fix) */
+.case-modal {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 100000 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: clamp(12px, 3vw, 24px) !important;
+  box-sizing: border-box !important;
+}
+
+.case-modal:not(.is-open) {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+  opacity: 0;
+}
+
+.case-modal.is-open {
+  display: flex !important;
+  visibility: visible !important;
+  pointer-events: auto !important;
+  opacity: 1;
+}
+
+/* Opaque Backdrop: 94% opacity with deep dark emerald tint */
+.case-modal-backdrop {
+  position: fixed !important;
+  inset: 0 !important;
+  background: rgba(3, 17, 22, 0.94) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  z-index: 100001 !important;
+  cursor: pointer;
+}
+
+/* Dialog: 100% Solid White with vertical scrollability */
+.case-modal-dialog {
+  position: relative !important;
+  z-index: 100002 !important;
+  background: #FFFFFF !important; /* 100% solid white, fully opaque */
+  color: var(--teal) !important;
+  width: 100% !important;
+  max-width: 960px !important;
+  max-height: calc(100vh - 32px) !important;
+  max-height: calc(100dvh - 32px) !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain !important;
+  border-radius: var(--radius-lg, 16px) !important;
+  box-shadow: 0 24px 72px rgba(0, 0, 0, 0.6) !important;
+  padding: clamp(16px, 3vw, 32px) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 16px !important;
+  box-sizing: border-box !important;
+}
+
+.case-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(10, 33, 41, 0.08);
+}
+
+.case-modal-header h3 {
+  font-size: clamp(18px, 2.5vw, 24px) !important;
+  font-weight: 700 !important;
+  color: var(--teal) !important;
+  margin: 0;
+  line-height: 1.25;
+}
+
+.case-modal-close {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #F0F4F2;
+  border: 1px solid rgba(10, 33, 41, 0.12);
+  color: var(--teal);
+  font-size: 15px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.case-modal-close:hover,
+.case-modal-close:focus-visible {
+  background: var(--mint);
+  border-color: var(--mint);
+  color: var(--teal);
+  outline: none;
+}
+
+/* Image containment inside modal */
+.case-modal-img-wrap {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  border-radius: var(--radius-md, 10px) !important;
+  border: 1px solid rgba(10, 33, 41, 0.1) !important;
+  background: #031116 !important;
+}
+
+.case-modal-img-wrap img {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 52vh !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+.case-modal-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  background: #F4F8F6;
+  padding: 14px 18px;
+  border-radius: var(--radius-md, 8px);
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 640px) {
+  .case-modal-meta {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+}
+
+/* 5. Quality Assurance Standards Grid (Dark Emerald Section) */
 .dr-standards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -86,7 +445,7 @@
   margin: 0;
 }
 
-/* 3. Deliverables & File Formats Grid (White Section) */
+/* 6. Deliverables & File Formats Grid (White Section) */
 .dr-formats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -150,7 +509,7 @@
   line-height: 1.5;
 }
 
-/* 4. Cross-Service Navigation Cards (Pale Mint Finish) */
+/* 7. Cross-Service Navigation Cards (Pale Mint Finish) */
 .dr-cross-section {
   padding: clamp(48px, 6vw, 72px) 0;
   background: #F4F9F7;
@@ -218,7 +577,7 @@
   color: var(--teal);
 }
 
-/* 5. Mobile & Small-Screen Hardening (320px - 768px) */
+/* 8. Small-Screen Hardening (320px - 768px) */
 @media (max-width: 768px) {
   .dr-standards-grid,
   .dr-formats-grid,
@@ -228,15 +587,6 @@
 }
 
 @media (max-width: 480px) {
-  .btn-back-portfolio {
-    font-size: 12px;
-    padding: 7px 14px;
-    width: 100%;
-    max-width: 240px;
-    justify-content: center;
-    box-sizing: border-box;
-  }
-
   .dr-standard-card,
   .dr-format-card,
   .dr-cross-card {

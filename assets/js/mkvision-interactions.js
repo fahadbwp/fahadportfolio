@@ -10,7 +10,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function openDrawer() {
     if (!drawer) return;
+    closeAllModals(false);
     drawer.classList.add('is-active');
+    document.body.classList.add('drawer-open');
     document.body.style.overflow = 'hidden';
     menuToggle?.setAttribute('aria-expanded', 'true');
     drawerClose?.focus();
@@ -19,7 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
   function closeDrawer() {
     if (!drawer) return;
     drawer.classList.remove('is-active');
-    document.body.style.overflow = '';
+    document.body.classList.remove('drawer-open');
+    if (!activeModal) {
+      document.body.style.overflow = '';
+    }
     menuToggle?.setAttribute('aria-expanded', 'false');
     menuToggle?.focus();
   }
@@ -41,14 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      if (drawer?.classList.contains('is-active')) {
-        closeDrawer();
-      }
-      closeAllModals();
-    }
-  });
+  // (Keydown handled unified below with Tab focus trapping)
 
   // 2. MK Vision Pinned Horizontal Project Gallery & Cyclic Controls
   const hscrollSection = document.querySelector('.showcase-section.hscroll');
@@ -218,44 +216,109 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // 4. Data Research Case Study Lightbox Modals
+  // 4. Case Study Lightbox Modals (with Focus Trapping & Restoration)
   const modalTriggers = document.querySelectorAll('[data-modal-target]');
   const caseModals = document.querySelectorAll('.case-modal');
   const modalCloses = document.querySelectorAll('.case-modal-close, .case-modal-backdrop');
+  let activeModal = null;
+  let lastActiveTrigger = null;
 
-  function openModal(modalId) {
+  function openModal(modalId, triggerEl) {
     const targetModal = document.getElementById(modalId);
     if (!targetModal) return;
+
+    if (drawer?.classList.contains('is-active')) {
+      closeDrawer();
+    }
+    closeAllModals(false);
+
+    lastActiveTrigger = triggerEl || document.activeElement;
+    activeModal = targetModal;
+
     targetModal.classList.add('is-open');
     targetModal.setAttribute('aria-hidden', 'false');
+    targetModal.removeAttribute('inert');
+    document.body.classList.add('modal-open');
     document.body.style.overflow = 'hidden';
+
+    // Set other elements inert for complete focus containment
+    document.querySelectorAll('header, main, footer, .skip-to-content, #mobile-drawer').forEach(el => {
+      el.inert = true;
+    });
+
     const closeBtn = targetModal.querySelector('.case-modal-close');
-    closeBtn?.focus();
+    setTimeout(() => {
+      closeBtn?.focus();
+    }, 50);
   }
 
-  function closeAllModals() {
+  function closeAllModals(restoreFocus = true) {
     caseModals.forEach(modal => {
       modal.classList.remove('is-open');
       modal.setAttribute('aria-hidden', 'true');
+      modal.inert = true;
     });
+
+    document.body.classList.remove('modal-open');
     if (!drawer?.classList.contains('is-active')) {
       document.body.style.overflow = '';
+      document.querySelectorAll('header, main, footer, .skip-to-content').forEach(el => {
+        el.inert = false;
+      });
     }
+
+    if (restoreFocus && lastActiveTrigger && typeof lastActiveTrigger.focus === 'function') {
+      lastActiveTrigger.focus();
+    }
+    activeModal = null;
   }
 
   modalTriggers.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
       const target = btn.getAttribute('data-modal-target');
-      if (target) openModal(target);
+      if (target) openModal(target, btn);
     });
   });
 
   modalCloses.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.preventDefault();
-      closeAllModals();
+      closeAllModals(true);
     });
+  });
+
+  // Global Keydown Handler: Escape dismissal & Tab Focus Trapping
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (activeModal) {
+        e.preventDefault();
+        closeAllModals(true);
+        return;
+      }
+      if (drawer?.classList.contains('is-active')) {
+        closeDrawer();
+      }
+    } else if (e.key === 'Tab' && activeModal) {
+      const focusables = Array.from(activeModal.querySelectorAll('a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+      if (focusables.length === 0) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+  });
+
+  // Ensure all modals start inert and accessible
+  caseModals.forEach(modal => {
+    modal.setAttribute('aria-hidden', 'true');
+    modal.inert = true;
   });
 
   // 5. Editorial FAQ Accordion: Clean Single-Open Behavior
