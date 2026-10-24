@@ -1,0 +1,20 @@
+{
+  "shortDrawer": {
+    "visible": true,
+    "width": 320,
+    "scrollWidth": 305
+  },
+  "external": [
+    {
+      "url": "https://www.upwork.com/freelancers/~01402e2d3e4f4322b7",
+      "status": 403,
+      "title": "Attention Required! | Cloudflare"
+    },
+    {
+      "url": "https://github.com/fahadbwp",
+      "status": 200,
+      "title": "fahadbwp · GitHub"
+    }
+  ],
+  "errors": []
+}

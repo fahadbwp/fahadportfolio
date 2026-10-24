@@ -1,0 +1,1612 @@
+[
+  {
+    "width": 320,
+    "scrollWidth": 305,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 305,
+      "height": 1055.453125,
+      "bottom": 1055.453125
+    },
+    "breadcrumb": {
+      "x": 16,
+      "y": 85,
+      "width": 273,
+      "height": 20.796875,
+      "bottom": 105.796875
+    },
+    "header": {
+      "x": 0,
+      "y": 12,
+      "width": 305,
+      "height": 42,
+      "bottom": 54
+    },
+    "actions": {
+      "x": 16,
+      "y": 586.515625,
+      "width": 273,
+      "height": 106,
+      "bottom": 692.515625
+    },
+    "faqBackground": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "faqItemBackground": "rgba(0, 0, 0, 0)",
+    "faqColor": "rgb(255, 255, 255)",
+    "home": [
+      {
+        "text": "FAHAD SALEEM\n        FAHAD.",
+        "width": 88.125,
+        "scrollWidth": 86,
+        "clientWidth": 86
+      },
+      {
+        "text": "← Main Portfolio",
+        "width": 180.84375,
+        "scrollWidth": 181,
+        "clientWidth": 181
+      },
+      {
+        "text": "Home",
+        "width": 35.75,
+        "scrollWidth": 36,
+        "clientWidth": 36
+      },
+      {
+        "text": "← MAIN PORTFOLIO",
+        "width": 235,
+        "scrollWidth": 233,
+        "clientWidth": 233
+      },
+      {
+        "text": "Home / Full Showcase",
+        "width": 167.765625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      },
+      {
+        "text": "← Return to Main Portfolio",
+        "width": 157.140625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      }
+    ],
+    "drawer": {
+      "active": true,
+      "width": 320,
+      "scrollWidth": 320,
+      "height": 900,
+      "scrollHeight": 900
+    },
+    "focusRestored": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://fahadsaleembwp.vercel.app/#website",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "name": "Fahad Saleem Portfolio",
+          "description": "B2B Lead Generation Specialist, Data Research Expert, and Custom Web Developer."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fahadsaleembwp.vercel.app/#person",
+          "name": "Fahad Saleem",
+          "jobTitle": "B2B Lead Generation Specialist & Web Developer",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "sameAs": [
+            "https://www.upwork.com/freelancers/~01402e2d3e4f4322b7",
+            "https://github.com/fahadbwp"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bahawalpur",
+            "addressRegion": "Punjab",
+            "addressCountry": "PK"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#webpage",
+          "url": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/",
+          "name": "B2B Lead Generation Specialist & Prospect Research | Fahad Saleem",
+          "isPartOf": {
+            "@id": "https://fahadsaleembwp.vercel.app/#website"
+          },
+          "description": "Dedicated B2B lead generation, prospect list building, and email verification services by Fahad Saleem."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://fahadsaleembwp.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B2B Lead Generation",
+              "item": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#service",
+          "name": "B2B Lead Generation & Prospect Research",
+          "serviceType": "B2B Lead Generation",
+          "description": "Targeted decision-maker research, verified business contact lists, and organized prospect data tailored to cold outreach campaigns.",
+          "provider": {
+            "@id": "https://fahadsaleembwp.vercel.app/#person"
+          },
+          "areaServed": "Global",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "B2B Prospect Research Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "LinkedIn Sales Navigator Prospecting"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Business Email Finding & Verification"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Targeted Company List Building & Deduplication"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What information is included in a B2B prospect list?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard deliveries include Company Name, Website, Industry, Employee Range, Location (City, State, Country), Decision-Maker Full Name, Job Title, Verified Business Email, Company Phone, and LinkedIn URL. Additional custom columns such as annual revenue estimate, tech stack, or secondary contacts can be included upon request."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you find relevant decision-makers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I use advanced Boolean search techniques in LinkedIn Sales Navigator, corporate state registries, industry directories, and official company portals to pinpoint exact individuals with purchasing and decision-making authority for your specific offering."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How are business email addresses checked?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every email is researched using industry-standard tools including Apollo.io, Hunter.io, and RocketReach, followed by syntax validation, domain MX record verification, and NeverBounce ping checks to ensure low bounce risk before inclusion in the final deliverable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request leads for a specific industry or country?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. I research leads across North America, Europe, Australia, and global markets in industries including Manufacturing, E-Commerce, Healthcare, SaaS, Professional Services, Real Estate, and Digital Agencies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What file formats can you deliver?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Deliverables are formatted cleanly in your preferred file type: Google Sheets (with live edit or view access), Microsoft Excel (.xlsx), or CSV files structured for immediate import into CRMs such as HubSpot, Salesforce, Zoho, or cold outreach platforms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the 10 free leads with first order offer work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When you place your first order for any prospect list package, I provide 10 additional verified leads matching your specific target criteria completely free of charge. This allows you to inspect data quality, verify deliverability in your email sequence, and review the formatting with zero extra cost on your initial project."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "width": 375,
+    "scrollWidth": 360,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 360,
+      "height": 1038.34375,
+      "bottom": 1038.34375
+    },
+    "breadcrumb": {
+      "x": 16,
+      "y": 85,
+      "width": 328,
+      "height": 20.796875,
+      "bottom": 105.796875
+    },
+    "header": {
+      "x": 0,
+      "y": 12,
+      "width": 360,
+      "height": 40,
+      "bottom": 52
+    },
+    "actions": {
+      "x": 16,
+      "y": 569.40625,
+      "width": 328,
+      "height": 106,
+      "bottom": 675.40625
+    },
+    "faqBackground": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "faqItemBackground": "rgba(0, 0, 0, 0)",
+    "faqColor": "rgb(255, 255, 255)",
+    "home": [
+      {
+        "text": "FAHAD SALEEM\n        FAHAD.",
+        "width": 92.125,
+        "scrollWidth": 90,
+        "clientWidth": 90
+      },
+      {
+        "text": "← Main Portfolio",
+        "width": 180.84375,
+        "scrollWidth": 181,
+        "clientWidth": 181
+      },
+      {
+        "text": "Home",
+        "width": 35.75,
+        "scrollWidth": 36,
+        "clientWidth": 36
+      },
+      {
+        "text": "← MAIN PORTFOLIO",
+        "width": 290,
+        "scrollWidth": 288,
+        "clientWidth": 288
+      },
+      {
+        "text": "Home / Full Showcase",
+        "width": 167.765625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      },
+      {
+        "text": "← Return to Main Portfolio",
+        "width": 157.140625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      }
+    ],
+    "drawer": {
+      "active": true,
+      "width": 375,
+      "scrollWidth": 375,
+      "height": 900,
+      "scrollHeight": 900
+    },
+    "focusRestored": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://fahadsaleembwp.vercel.app/#website",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "name": "Fahad Saleem Portfolio",
+          "description": "B2B Lead Generation Specialist, Data Research Expert, and Custom Web Developer."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fahadsaleembwp.vercel.app/#person",
+          "name": "Fahad Saleem",
+          "jobTitle": "B2B Lead Generation Specialist & Web Developer",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "sameAs": [
+            "https://www.upwork.com/freelancers/~01402e2d3e4f4322b7",
+            "https://github.com/fahadbwp"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bahawalpur",
+            "addressRegion": "Punjab",
+            "addressCountry": "PK"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#webpage",
+          "url": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/",
+          "name": "B2B Lead Generation Specialist & Prospect Research | Fahad Saleem",
+          "isPartOf": {
+            "@id": "https://fahadsaleembwp.vercel.app/#website"
+          },
+          "description": "Dedicated B2B lead generation, prospect list building, and email verification services by Fahad Saleem."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://fahadsaleembwp.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B2B Lead Generation",
+              "item": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#service",
+          "name": "B2B Lead Generation & Prospect Research",
+          "serviceType": "B2B Lead Generation",
+          "description": "Targeted decision-maker research, verified business contact lists, and organized prospect data tailored to cold outreach campaigns.",
+          "provider": {
+            "@id": "https://fahadsaleembwp.vercel.app/#person"
+          },
+          "areaServed": "Global",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "B2B Prospect Research Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "LinkedIn Sales Navigator Prospecting"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Business Email Finding & Verification"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Targeted Company List Building & Deduplication"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What information is included in a B2B prospect list?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard deliveries include Company Name, Website, Industry, Employee Range, Location (City, State, Country), Decision-Maker Full Name, Job Title, Verified Business Email, Company Phone, and LinkedIn URL. Additional custom columns such as annual revenue estimate, tech stack, or secondary contacts can be included upon request."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you find relevant decision-makers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I use advanced Boolean search techniques in LinkedIn Sales Navigator, corporate state registries, industry directories, and official company portals to pinpoint exact individuals with purchasing and decision-making authority for your specific offering."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How are business email addresses checked?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every email is researched using industry-standard tools including Apollo.io, Hunter.io, and RocketReach, followed by syntax validation, domain MX record verification, and NeverBounce ping checks to ensure low bounce risk before inclusion in the final deliverable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request leads for a specific industry or country?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. I research leads across North America, Europe, Australia, and global markets in industries including Manufacturing, E-Commerce, Healthcare, SaaS, Professional Services, Real Estate, and Digital Agencies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What file formats can you deliver?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Deliverables are formatted cleanly in your preferred file type: Google Sheets (with live edit or view access), Microsoft Excel (.xlsx), or CSV files structured for immediate import into CRMs such as HubSpot, Salesforce, Zoho, or cold outreach platforms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the 10 free leads with first order offer work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When you place your first order for any prospect list package, I provide 10 additional verified leads matching your specific target criteria completely free of charge. This allows you to inspect data quality, verify deliverability in your email sequence, and review the formatting with zero extra cost on your initial project."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "scrollWidth": 375,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 375,
+      "height": 1028.8125,
+      "bottom": 1028.8125
+    },
+    "breadcrumb": {
+      "x": 16,
+      "y": 85,
+      "width": 343,
+      "height": 20.796875,
+      "bottom": 105.796875
+    },
+    "header": {
+      "x": 0,
+      "y": 12,
+      "width": 375,
+      "height": 40,
+      "bottom": 52
+    },
+    "actions": {
+      "x": 16,
+      "y": 559.875,
+      "width": 343,
+      "height": 106,
+      "bottom": 665.875
+    },
+    "faqBackground": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "faqItemBackground": "rgba(0, 0, 0, 0)",
+    "faqColor": "rgb(255, 255, 255)",
+    "home": [
+      {
+        "text": "FAHAD SALEEM\n        FAHAD.",
+        "width": 92.125,
+        "scrollWidth": 90,
+        "clientWidth": 90
+      },
+      {
+        "text": "← Main Portfolio",
+        "width": 180.84375,
+        "scrollWidth": 181,
+        "clientWidth": 181
+      },
+      {
+        "text": "Home",
+        "width": 35.75,
+        "scrollWidth": 36,
+        "clientWidth": 36
+      },
+      {
+        "text": "← MAIN PORTFOLIO",
+        "width": 305,
+        "scrollWidth": 303,
+        "clientWidth": 303
+      },
+      {
+        "text": "Home / Full Showcase",
+        "width": 167.765625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      },
+      {
+        "text": "← Return to Main Portfolio",
+        "width": 157.140625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      }
+    ],
+    "drawer": {
+      "active": true,
+      "width": 390,
+      "scrollWidth": 390,
+      "height": 900,
+      "scrollHeight": 900
+    },
+    "focusRestored": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://fahadsaleembwp.vercel.app/#website",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "name": "Fahad Saleem Portfolio",
+          "description": "B2B Lead Generation Specialist, Data Research Expert, and Custom Web Developer."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fahadsaleembwp.vercel.app/#person",
+          "name": "Fahad Saleem",
+          "jobTitle": "B2B Lead Generation Specialist & Web Developer",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "sameAs": [
+            "https://www.upwork.com/freelancers/~01402e2d3e4f4322b7",
+            "https://github.com/fahadbwp"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bahawalpur",
+            "addressRegion": "Punjab",
+            "addressCountry": "PK"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#webpage",
+          "url": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/",
+          "name": "B2B Lead Generation Specialist & Prospect Research | Fahad Saleem",
+          "isPartOf": {
+            "@id": "https://fahadsaleembwp.vercel.app/#website"
+          },
+          "description": "Dedicated B2B lead generation, prospect list building, and email verification services by Fahad Saleem."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://fahadsaleembwp.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B2B Lead Generation",
+              "item": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#service",
+          "name": "B2B Lead Generation & Prospect Research",
+          "serviceType": "B2B Lead Generation",
+          "description": "Targeted decision-maker research, verified business contact lists, and organized prospect data tailored to cold outreach campaigns.",
+          "provider": {
+            "@id": "https://fahadsaleembwp.vercel.app/#person"
+          },
+          "areaServed": "Global",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "B2B Prospect Research Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "LinkedIn Sales Navigator Prospecting"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Business Email Finding & Verification"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Targeted Company List Building & Deduplication"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What information is included in a B2B prospect list?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard deliveries include Company Name, Website, Industry, Employee Range, Location (City, State, Country), Decision-Maker Full Name, Job Title, Verified Business Email, Company Phone, and LinkedIn URL. Additional custom columns such as annual revenue estimate, tech stack, or secondary contacts can be included upon request."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you find relevant decision-makers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I use advanced Boolean search techniques in LinkedIn Sales Navigator, corporate state registries, industry directories, and official company portals to pinpoint exact individuals with purchasing and decision-making authority for your specific offering."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How are business email addresses checked?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every email is researched using industry-standard tools including Apollo.io, Hunter.io, and RocketReach, followed by syntax validation, domain MX record verification, and NeverBounce ping checks to ensure low bounce risk before inclusion in the final deliverable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request leads for a specific industry or country?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. I research leads across North America, Europe, Australia, and global markets in industries including Manufacturing, E-Commerce, Healthcare, SaaS, Professional Services, Real Estate, and Digital Agencies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What file formats can you deliver?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Deliverables are formatted cleanly in your preferred file type: Google Sheets (with live edit or view access), Microsoft Excel (.xlsx), or CSV files structured for immediate import into CRMs such as HubSpot, Salesforce, Zoho, or cold outreach platforms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the 10 free leads with first order offer work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When you place your first order for any prospect list package, I provide 10 additional verified leads matching your specific target criteria completely free of charge. This allows you to inspect data quality, verify deliverability in your email sequence, and review the formatting with zero extra cost on your initial project."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "width": 430,
+    "scrollWidth": 415,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 415,
+      "height": 1024.53125,
+      "bottom": 1024.53125
+    },
+    "breadcrumb": {
+      "x": 17.1875,
+      "y": 85,
+      "width": 380.625,
+      "height": 20.796875,
+      "bottom": 105.796875
+    },
+    "header": {
+      "x": 0,
+      "y": 12,
+      "width": 415,
+      "height": 40,
+      "bottom": 52
+    },
+    "actions": {
+      "x": 27.5,
+      "y": 555.59375,
+      "width": 360,
+      "height": 106,
+      "bottom": 661.59375
+    },
+    "faqBackground": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "faqItemBackground": "rgba(0, 0, 0, 0)",
+    "faqColor": "rgb(255, 255, 255)",
+    "home": [
+      {
+        "text": "FAHAD SALEEM\n        FAHAD.",
+        "width": 92.125,
+        "scrollWidth": 90,
+        "clientWidth": 90
+      },
+      {
+        "text": "← Main Portfolio",
+        "width": 180.84375,
+        "scrollWidth": 181,
+        "clientWidth": 181
+      },
+      {
+        "text": "Home",
+        "width": 35.75,
+        "scrollWidth": 36,
+        "clientWidth": 36
+      },
+      {
+        "text": "← MAIN PORTFOLIO",
+        "width": 342.625,
+        "scrollWidth": 341,
+        "clientWidth": 341
+      },
+      {
+        "text": "Home / Full Showcase",
+        "width": 167.765625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      },
+      {
+        "text": "← Return to Main Portfolio",
+        "width": 157.140625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      }
+    ],
+    "drawer": {
+      "active": true,
+      "width": 430,
+      "scrollWidth": 430,
+      "height": 900,
+      "scrollHeight": 900
+    },
+    "focusRestored": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://fahadsaleembwp.vercel.app/#website",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "name": "Fahad Saleem Portfolio",
+          "description": "B2B Lead Generation Specialist, Data Research Expert, and Custom Web Developer."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fahadsaleembwp.vercel.app/#person",
+          "name": "Fahad Saleem",
+          "jobTitle": "B2B Lead Generation Specialist & Web Developer",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "sameAs": [
+            "https://www.upwork.com/freelancers/~01402e2d3e4f4322b7",
+            "https://github.com/fahadbwp"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bahawalpur",
+            "addressRegion": "Punjab",
+            "addressCountry": "PK"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#webpage",
+          "url": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/",
+          "name": "B2B Lead Generation Specialist & Prospect Research | Fahad Saleem",
+          "isPartOf": {
+            "@id": "https://fahadsaleembwp.vercel.app/#website"
+          },
+          "description": "Dedicated B2B lead generation, prospect list building, and email verification services by Fahad Saleem."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://fahadsaleembwp.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B2B Lead Generation",
+              "item": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#service",
+          "name": "B2B Lead Generation & Prospect Research",
+          "serviceType": "B2B Lead Generation",
+          "description": "Targeted decision-maker research, verified business contact lists, and organized prospect data tailored to cold outreach campaigns.",
+          "provider": {
+            "@id": "https://fahadsaleembwp.vercel.app/#person"
+          },
+          "areaServed": "Global",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "B2B Prospect Research Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "LinkedIn Sales Navigator Prospecting"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Business Email Finding & Verification"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Targeted Company List Building & Deduplication"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What information is included in a B2B prospect list?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard deliveries include Company Name, Website, Industry, Employee Range, Location (City, State, Country), Decision-Maker Full Name, Job Title, Verified Business Email, Company Phone, and LinkedIn URL. Additional custom columns such as annual revenue estimate, tech stack, or secondary contacts can be included upon request."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you find relevant decision-makers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I use advanced Boolean search techniques in LinkedIn Sales Navigator, corporate state registries, industry directories, and official company portals to pinpoint exact individuals with purchasing and decision-making authority for your specific offering."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How are business email addresses checked?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every email is researched using industry-standard tools including Apollo.io, Hunter.io, and RocketReach, followed by syntax validation, domain MX record verification, and NeverBounce ping checks to ensure low bounce risk before inclusion in the final deliverable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request leads for a specific industry or country?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. I research leads across North America, Europe, Australia, and global markets in industries including Manufacturing, E-Commerce, Healthcare, SaaS, Professional Services, Real Estate, and Digital Agencies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What file formats can you deliver?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Deliverables are formatted cleanly in your preferred file type: Google Sheets (with live edit or view access), Microsoft Excel (.xlsx), or CSV files structured for immediate import into CRMs such as HubSpot, Salesforce, Zoho, or cold outreach platforms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the 10 free leads with first order offer work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When you place your first order for any prospect list package, I provide 10 additional verified leads matching your specific target criteria completely free of charge. This allows you to inspect data quality, verify deliverability in your email sequence, and review the formatting with zero extra cost on your initial project."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "width": 768,
+    "scrollWidth": 753,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 753,
+      "height": 761.15625,
+      "bottom": 761.15625
+    },
+    "breadcrumb": {
+      "x": 30.71875,
+      "y": 85,
+      "width": 691.5625,
+      "height": 20.796875,
+      "bottom": 105.796875
+    },
+    "header": {
+      "x": 0,
+      "y": 18,
+      "width": 753,
+      "height": 48,
+      "bottom": 66
+    },
+    "actions": {
+      "x": 30.71875,
+      "y": 519.796875,
+      "width": 691.5625,
+      "height": 50.609375,
+      "bottom": 570.40625
+    },
+    "faqBackground": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "faqItemBackground": "rgba(0, 0, 0, 0)",
+    "faqColor": "rgb(255, 255, 255)",
+    "home": [
+      {
+        "text": "FAHAD SALEEM\n        FAHAD.",
+        "width": 176.125,
+        "scrollWidth": 174,
+        "clientWidth": 174
+      },
+      {
+        "text": "← Main Portfolio",
+        "width": 271.265625,
+        "scrollWidth": 271,
+        "clientWidth": 271
+      },
+      {
+        "text": "Home",
+        "width": 35.75,
+        "scrollWidth": 36,
+        "clientWidth": 36
+      },
+      {
+        "text": "← MAIN PORTFOLIO",
+        "width": 172.53125,
+        "scrollWidth": 171,
+        "clientWidth": 171
+      },
+      {
+        "text": "Home / Full Showcase",
+        "width": 167.765625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      },
+      {
+        "text": "← Return to Main Portfolio",
+        "width": 157.140625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      }
+    ],
+    "drawer": {
+      "active": true,
+      "width": 768,
+      "scrollWidth": 768,
+      "height": 900,
+      "scrollHeight": 900
+    },
+    "focusRestored": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://fahadsaleembwp.vercel.app/#website",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "name": "Fahad Saleem Portfolio",
+          "description": "B2B Lead Generation Specialist, Data Research Expert, and Custom Web Developer."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fahadsaleembwp.vercel.app/#person",
+          "name": "Fahad Saleem",
+          "jobTitle": "B2B Lead Generation Specialist & Web Developer",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "sameAs": [
+            "https://www.upwork.com/freelancers/~01402e2d3e4f4322b7",
+            "https://github.com/fahadbwp"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bahawalpur",
+            "addressRegion": "Punjab",
+            "addressCountry": "PK"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#webpage",
+          "url": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/",
+          "name": "B2B Lead Generation Specialist & Prospect Research | Fahad Saleem",
+          "isPartOf": {
+            "@id": "https://fahadsaleembwp.vercel.app/#website"
+          },
+          "description": "Dedicated B2B lead generation, prospect list building, and email verification services by Fahad Saleem."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://fahadsaleembwp.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B2B Lead Generation",
+              "item": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#service",
+          "name": "B2B Lead Generation & Prospect Research",
+          "serviceType": "B2B Lead Generation",
+          "description": "Targeted decision-maker research, verified business contact lists, and organized prospect data tailored to cold outreach campaigns.",
+          "provider": {
+            "@id": "https://fahadsaleembwp.vercel.app/#person"
+          },
+          "areaServed": "Global",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "B2B Prospect Research Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "LinkedIn Sales Navigator Prospecting"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Business Email Finding & Verification"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Targeted Company List Building & Deduplication"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What information is included in a B2B prospect list?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard deliveries include Company Name, Website, Industry, Employee Range, Location (City, State, Country), Decision-Maker Full Name, Job Title, Verified Business Email, Company Phone, and LinkedIn URL. Additional custom columns such as annual revenue estimate, tech stack, or secondary contacts can be included upon request."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you find relevant decision-makers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I use advanced Boolean search techniques in LinkedIn Sales Navigator, corporate state registries, industry directories, and official company portals to pinpoint exact individuals with purchasing and decision-making authority for your specific offering."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How are business email addresses checked?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every email is researched using industry-standard tools including Apollo.io, Hunter.io, and RocketReach, followed by syntax validation, domain MX record verification, and NeverBounce ping checks to ensure low bounce risk before inclusion in the final deliverable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request leads for a specific industry or country?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. I research leads across North America, Europe, Australia, and global markets in industries including Manufacturing, E-Commerce, Healthcare, SaaS, Professional Services, Real Estate, and Digital Agencies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What file formats can you deliver?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Deliverables are formatted cleanly in your preferred file type: Google Sheets (with live edit or view access), Microsoft Excel (.xlsx), or CSV files structured for immediate import into CRMs such as HubSpot, Salesforce, Zoho, or cold outreach platforms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the 10 free leads with first order offer work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When you place your first order for any prospect list package, I provide 10 additional verified leads matching your specific target criteria completely free of charge. This allows you to inspect data quality, verify deliverability in your email sequence, and review the formatting with zero extra cost on your initial project."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "width": 1366,
+    "scrollWidth": 1351,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 1351,
+      "height": 839.6875,
+      "bottom": 839.6875
+    },
+    "breadcrumb": {
+      "x": 54.625,
+      "y": 109.265625,
+      "width": 1241.75,
+      "height": 20.796875,
+      "bottom": 130.0625
+    },
+    "header": {
+      "x": 0,
+      "y": 18,
+      "width": 1351,
+      "height": 48,
+      "bottom": 66
+    },
+    "actions": {
+      "x": 54.625,
+      "y": 592.078125,
+      "width": 1241.75,
+      "height": 50.609375,
+      "bottom": 642.6875
+    },
+    "faqBackground": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "faqItemBackground": "rgba(0, 0, 0, 0)",
+    "faqColor": "rgb(255, 255, 255)",
+    "home": [
+      {
+        "text": "FAHAD SALEEM\n        FAHAD.",
+        "width": 181.75,
+        "scrollWidth": 180,
+        "clientWidth": 180
+      },
+      {
+        "text": "← Main Portfolio",
+        "width": 271.265625,
+        "scrollWidth": 271,
+        "clientWidth": 271
+      },
+      {
+        "text": "Home",
+        "width": 35.75,
+        "scrollWidth": 36,
+        "clientWidth": 36
+      },
+      {
+        "text": "← MAIN PORTFOLIO",
+        "width": 172.53125,
+        "scrollWidth": 171,
+        "clientWidth": 171
+      },
+      {
+        "text": "Home / Full Showcase",
+        "width": 167.765625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      },
+      {
+        "text": "← Return to Main Portfolio",
+        "width": 157.140625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      }
+    ],
+    "drawer": {
+      "active": true,
+      "width": 1366,
+      "scrollWidth": 1366,
+      "height": 900,
+      "scrollHeight": 900
+    },
+    "focusRestored": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://fahadsaleembwp.vercel.app/#website",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "name": "Fahad Saleem Portfolio",
+          "description": "B2B Lead Generation Specialist, Data Research Expert, and Custom Web Developer."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fahadsaleembwp.vercel.app/#person",
+          "name": "Fahad Saleem",
+          "jobTitle": "B2B Lead Generation Specialist & Web Developer",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "sameAs": [
+            "https://www.upwork.com/freelancers/~01402e2d3e4f4322b7",
+            "https://github.com/fahadbwp"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bahawalpur",
+            "addressRegion": "Punjab",
+            "addressCountry": "PK"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#webpage",
+          "url": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/",
+          "name": "B2B Lead Generation Specialist & Prospect Research | Fahad Saleem",
+          "isPartOf": {
+            "@id": "https://fahadsaleembwp.vercel.app/#website"
+          },
+          "description": "Dedicated B2B lead generation, prospect list building, and email verification services by Fahad Saleem."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://fahadsaleembwp.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B2B Lead Generation",
+              "item": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#service",
+          "name": "B2B Lead Generation & Prospect Research",
+          "serviceType": "B2B Lead Generation",
+          "description": "Targeted decision-maker research, verified business contact lists, and organized prospect data tailored to cold outreach campaigns.",
+          "provider": {
+            "@id": "https://fahadsaleembwp.vercel.app/#person"
+          },
+          "areaServed": "Global",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "B2B Prospect Research Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "LinkedIn Sales Navigator Prospecting"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Business Email Finding & Verification"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Targeted Company List Building & Deduplication"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What information is included in a B2B prospect list?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard deliveries include Company Name, Website, Industry, Employee Range, Location (City, State, Country), Decision-Maker Full Name, Job Title, Verified Business Email, Company Phone, and LinkedIn URL. Additional custom columns such as annual revenue estimate, tech stack, or secondary contacts can be included upon request."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you find relevant decision-makers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I use advanced Boolean search techniques in LinkedIn Sales Navigator, corporate state registries, industry directories, and official company portals to pinpoint exact individuals with purchasing and decision-making authority for your specific offering."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How are business email addresses checked?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every email is researched using industry-standard tools including Apollo.io, Hunter.io, and RocketReach, followed by syntax validation, domain MX record verification, and NeverBounce ping checks to ensure low bounce risk before inclusion in the final deliverable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request leads for a specific industry or country?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. I research leads across North America, Europe, Australia, and global markets in industries including Manufacturing, E-Commerce, Healthcare, SaaS, Professional Services, Real Estate, and Digital Agencies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What file formats can you deliver?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Deliverables are formatted cleanly in your preferred file type: Google Sheets (with live edit or view access), Microsoft Excel (.xlsx), or CSV files structured for immediate import into CRMs such as HubSpot, Salesforce, Zoho, or cold outreach platforms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the 10 free leads with first order offer work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When you place your first order for any prospect list package, I provide 10 additional verified leads matching your specific target criteria completely free of charge. This allows you to inspect data quality, verify deliverability in your email sequence, and review the formatting with zero extra cost on your initial project."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "scrollWidth": 1425,
+    "hero": {
+      "x": 0,
+      "y": 0,
+      "width": 1425,
+      "height": 849.390625,
+      "bottom": 849.390625
+    },
+    "breadcrumb": {
+      "x": 80.09375,
+      "y": 110,
+      "width": 1264.8125,
+      "height": 20.796875,
+      "bottom": 130.796875
+    },
+    "header": {
+      "x": 0,
+      "y": 18,
+      "width": 1425,
+      "height": 48,
+      "bottom": 66
+    },
+    "actions": {
+      "x": 80.09375,
+      "y": 601.78125,
+      "width": 1264.8125,
+      "height": 50.609375,
+      "bottom": 652.390625
+    },
+    "faqBackground": "rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box",
+    "faqItemBackground": "rgba(0, 0, 0, 0)",
+    "faqColor": "rgb(255, 255, 255)",
+    "home": [
+      {
+        "text": "FAHAD SALEEM\n        FAHAD.",
+        "width": 181.75,
+        "scrollWidth": 180,
+        "clientWidth": 180
+      },
+      {
+        "text": "← Main Portfolio",
+        "width": 271.265625,
+        "scrollWidth": 271,
+        "clientWidth": 271
+      },
+      {
+        "text": "Home",
+        "width": 35.75,
+        "scrollWidth": 36,
+        "clientWidth": 36
+      },
+      {
+        "text": "← MAIN PORTFOLIO",
+        "width": 172.53125,
+        "scrollWidth": 171,
+        "clientWidth": 171
+      },
+      {
+        "text": "Home / Full Showcase",
+        "width": 167.765625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      },
+      {
+        "text": "← Return to Main Portfolio",
+        "width": 157.140625,
+        "scrollWidth": 0,
+        "clientWidth": 0
+      }
+    ],
+    "drawer": {
+      "active": true,
+      "width": 1440,
+      "scrollWidth": 1440,
+      "height": 900,
+      "scrollHeight": 900
+    },
+    "focusRestored": true,
+    "schema": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://fahadsaleembwp.vercel.app/#website",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "name": "Fahad Saleem Portfolio",
+          "description": "B2B Lead Generation Specialist, Data Research Expert, and Custom Web Developer."
+        },
+        {
+          "@type": "Person",
+          "@id": "https://fahadsaleembwp.vercel.app/#person",
+          "name": "Fahad Saleem",
+          "jobTitle": "B2B Lead Generation Specialist & Web Developer",
+          "url": "https://fahadsaleembwp.vercel.app/",
+          "sameAs": [
+            "https://www.upwork.com/freelancers/~01402e2d3e4f4322b7",
+            "https://github.com/fahadbwp"
+          ],
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bahawalpur",
+            "addressRegion": "Punjab",
+            "addressCountry": "PK"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#webpage",
+          "url": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/",
+          "name": "B2B Lead Generation Specialist & Prospect Research | Fahad Saleem",
+          "isPartOf": {
+            "@id": "https://fahadsaleembwp.vercel.app/#website"
+          },
+          "description": "Dedicated B2B lead generation, prospect list building, and email verification services by Fahad Saleem."
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://fahadsaleembwp.vercel.app/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B2B Lead Generation",
+              "item": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/"
+            }
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#service",
+          "name": "B2B Lead Generation & Prospect Research",
+          "serviceType": "B2B Lead Generation",
+          "description": "Targeted decision-maker research, verified business contact lists, and organized prospect data tailored to cold outreach campaigns.",
+          "provider": {
+            "@id": "https://fahadsaleembwp.vercel.app/#person"
+          },
+          "areaServed": "Global",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "B2B Prospect Research Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "LinkedIn Sales Navigator Prospecting"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Business Email Finding & Verification"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Targeted Company List Building & Deduplication"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What information is included in a B2B prospect list?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Standard deliveries include Company Name, Website, Industry, Employee Range, Location (City, State, Country), Decision-Maker Full Name, Job Title, Verified Business Email, Company Phone, and LinkedIn URL. Additional custom columns such as annual revenue estimate, tech stack, or secondary contacts can be included upon request."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do you find relevant decision-makers?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "I use advanced Boolean search techniques in LinkedIn Sales Navigator, corporate state registries, industry directories, and official company portals to pinpoint exact individuals with purchasing and decision-making authority for your specific offering."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How are business email addresses checked?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Every email is researched using industry-standard tools including Apollo.io, Hunter.io, and RocketReach, followed by syntax validation, domain MX record verification, and NeverBounce ping checks to ensure low bounce risk before inclusion in the final deliverable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I request leads for a specific industry or country?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. I research leads across North America, Europe, Australia, and global markets in industries including Manufacturing, E-Commerce, Healthcare, SaaS, Professional Services, Real Estate, and Digital Agencies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What file formats can you deliver?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Deliverables are formatted cleanly in your preferred file type: Google Sheets (with live edit or view access), Microsoft Excel (.xlsx), or CSV files structured for immediate import into CRMs such as HubSpot, Salesforce, Zoho, or cold outreach platforms."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does the 10 free leads with first order offer work?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "When you place your first order for any prospect list package, I provide 10 additional verified leads matching your specific target criteria completely free of charge. This allows you to inspect data quality, verify deliverability in your email sequence, and review the formatting with zero extra cost on your initial project."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+]
