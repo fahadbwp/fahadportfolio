@@ -2134,19 +2134,33 @@
       .brand-short {
         display: inline;
       }
-      .site-brand-pill {
-        padding: 0 14px;
+      .action-full {
+        display: none;
       }
-      
-    .action-short {
-      display: none;
-    }
-
-    .btn-action-pill {
-        padding: 0 16px;
+      .action-short {
+        display: inline;
+      }
+      .site-header {
+        padding: 0 12px;
+        top: 12px;
+      }
+      .site-brand-pill {
+        height: 40px;
+        padding: 0 12px;
+        font-size: 12px;
+      }
+      .header-actions {
+        gap: 6px;
+      }
+      .btn-action-pill {
+        height: 40px;
+        padding: 0 12px;
+        font-size: 11px;
       }
       .btn-menu-pill {
-        padding: 0 14px;
+        height: 40px;
+        padding: 0 10px;
+        font-size: 11px;
       }
       .hero-metrics-grid {
         grid-template-columns: 1fr;
