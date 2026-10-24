@@ -130,6 +130,7 @@
             "@type": "Service",
             "@id": "https://fahadsaleembwp.vercel.app/#service-lead-generation",
             "name": "B2B Lead Generation & Prospect Research",
+            "url": "https://fahadsaleembwp.vercel.app/b2b-lead-generation/",
             "serviceType": "B2B Lead Generation",
             "provider": {
                 "@id": "https://fahadsaleembwp.vercel.app/#person"
@@ -200,7 +201,7 @@
                     "name": "Are your featured projects live and verifiable?",
                     "acceptedAnswer": {
                         "@type": "Answer",
-                        "text": "Yes. Plexudo is live at plexudo.vercel.app, Haveli Village Restaurant is live at haveli-village-restaurant.vercel.app, and the AI Smart Text Utility repository is public on GitHub at github.com/fahadbwp/ai-text-utility."
+                        "text": "Yes. You can explore my live web applications, including Plexudo, AI Smart Text Utility, and Haveli Village Restaurant. My public GitHub repositories also provide access to available project source code. Plexudo: https://plexudo.vercel.app/ | AI Smart Text Utility: https://ai-text-utility.vercel.app/ | Haveli Village Restaurant: https://haveli-village-restaurant.vercel.app/"
                     }
                 },
                 {
@@ -228,17 +229,18 @@
             }
         },
         {
-            "@type": "SoftwareApplication",
-            "@id": "https://github.com/fahadbwp/ai-text-utility#software",
+            "@type": "WebApplication",
+            "@id": "https://ai-text-utility.vercel.app/#app",
             "name": "AI Smart Text Utility",
-            "url": "https://github.com/fahadbwp/ai-text-utility",
+            "url": "https://ai-text-utility.vercel.app/",
             "applicationCategory": "DeveloperApplication",
             "operatingSystem": "All",
             "description": "Open-source developer utility developed with AI assistance for formatting, cleaning, JSON/CSV conversion, and text processing built with Next.js, React, TypeScript, and Tailwind CSS.",
             "contributor": {
                 "@id": "https://fahadsaleembwp.vercel.app/#person"
             },
-            "codeRepository": "https://github.com/fahadbwp/ai-text-utility"
+            "codeRepository": "https://github.com/fahadbwp/ai-text-utility",
+            "browserRequirements": "Requires JavaScript. Requires HTML5."
         },
         {
             "@type": "WebApplication",
@@ -293,6 +295,7 @@
     </div>
     <ul class="mobile-drawer-links">
       <li><a href="#hero">Home</a></li>
+      <li><a href="/b2b-lead-generation/">B2B Lead Generation <span class="count-pill">PAGE</span></a></li>
       <li><a href="#projects">Projects <span class="count-pill">03</span></a></li>
       <li><a href="#leadgen">Case Studies <span class="count-pill">05</span></a></li>
       <li><a href="#services">Capabilities</a></li>
@@ -432,8 +435,8 @@
               <span class="tag">Next.js</span>
               <span class="tag">Tailwind CSS</span>
             </div>
-            <a href="https://github.com/fahadbwp/ai-text-utility" target="_blank" rel="noopener noreferrer" class="btn-visit-project" style="margin-top: 10px; align-self: flex-start;">
-              GITHUB REPO ↗
+            <a href="https://ai-text-utility.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-visit-project" style="margin-top: 10px; align-self: flex-start;">
+              LIVE SITE ↗
             </a>
           </div>
         </article>
@@ -498,6 +501,9 @@
         <p class="showcase-intro-p">
           Structured B2B research deliverables, executive prospect discovery, and demographic dataset compilation. Previews are sanitized with synthetic placeholders to protect client and personal privacy.
         </p>
+        <div style="margin-top: 14px;">
+          <a href="/b2b-lead-generation/" class="btn-action-pill" style="font-size: 11.5px; padding: 0 16px; height: 38px; display: inline-flex;">EXPLORE DEDICATED B2B SERVICE PAGE ↗</a>
+        </div>
       </div>
 
       <div class="leadgen-vertical-list">
@@ -716,8 +722,9 @@
               <span class="badge-tool">Google Sheets</span>
             </div>
           </div>
-          <div class="editorial-action">
-            <a href="#leadgen" class="editorial-btn">View Case Studies ↗</a>
+          <div class="editorial-action" style="display: flex; flex-direction: column; gap: 8px;">
+            <a href="/b2b-lead-generation/" class="editorial-btn">Dedicated Service Page ↗</a>
+            <a href="#leadgen" class="editorial-btn secondary" style="font-size: 11px;">View Case Studies ↓</a>
           </div>
         </article>
 
@@ -956,14 +963,21 @@
             </div>
           </details>
 
-          <!-- FAQ 4 -->
+          <!-- FAQ 4: Featured Projects Live & Verifiable -->
           <details class="faq-item">
             <summary class="faq-trigger">
               <span>Are your featured projects live and verifiable?</span>
               <span class="faq-icon-pm">+</span>
             </summary>
             <div class="faq-content">
-              Yes. Plexudo is live at plexudo.vercel.app, Haveli Village Restaurant is live at haveli-village-restaurant.vercel.app, and the AI Smart Text Utility repository is public on GitHub at github.com/fahadbwp/ai-text-utility.
+              <p style="margin-bottom: 8px;">
+                Yes. You can explore my live web applications, including Plexudo, AI Smart Text Utility, and Haveli Village Restaurant. My public GitHub repositories also provide access to available project source code.
+              </p>
+              <ul style="margin: 8px 0 0 18px; line-height: 1.7; color: var(--text-muted-dark);">
+                <li><strong>Plexudo:</strong> <a href="https://plexudo.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--mint-dark); text-decoration: underline;">https://plexudo.vercel.app/</a></li>
+                <li><strong>AI Smart Text Utility:</strong> <a href="https://ai-text-utility.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--mint-dark); text-decoration: underline;">https://ai-text-utility.vercel.app/</a></li>
+                <li><strong>Haveli Village Restaurant:</strong> <a href="https://haveli-village-restaurant.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--mint-dark); text-decoration: underline;">https://haveli-village-restaurant.vercel.app/</a></li>
+              </ul>
             </div>
           </details>
 
@@ -1001,6 +1015,7 @@
           <nav aria-label="Footer Navigation">
             <ul class="footer-nav-v2-list">
               <li><a href="#hero" class="footer-nav-v2-link">Home</a></li>
+              <li><a href="/b2b-lead-generation/" class="footer-nav-v2-link">B2B Lead Generation <span class="count-pill">PAGE</span></a></li>
               <li><a href="#projects" class="footer-nav-v2-link">Web Projects <span class="count-pill">03</span></a></li>
               <li><a href="#leadgen" class="footer-nav-v2-link">Lead Generation <span class="count-pill">05</span></a></li>
               <li><a href="#services" class="footer-nav-v2-link">Services</a></li>
