@@ -5,6 +5,20 @@
    ========================================================================== */
 
 /* Breadcrumb Navigation Bar */
+.hero-section {
+  padding-top: 82px;
+}
+
+.hero-kicker {
+  margin-bottom: 16px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .b2b-breadcrumb {
   display: flex;
   align-items: center;
@@ -12,7 +26,7 @@
   font-size: 13px;
   font-weight: 600;
   color: var(--mint);
-  margin-bottom: clamp(16px, 2.5vw, 24px);
+  margin-bottom: 12px;
   justify-content: center;
   flex-wrap: wrap;
   text-align: center;
@@ -41,7 +55,7 @@
   border: 1px solid rgba(3, 226, 156, 0.35);
   border-radius: var(--radius-pill);
   padding: 10px clamp(16px, 3vw, 24px);
-  margin: 0 auto clamp(24px, 3.5vw, 36px);
+  margin: 0 auto 20px;
   max-width: 720px;
   width: auto;
   box-sizing: border-box;
@@ -247,7 +261,7 @@
 }
 
 .b2b-sample-card {
-  background: var(--gray-card);
+  background: var(--teal-card);
   border: 1px solid var(--teal-border);
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -412,7 +426,7 @@
 }
 
 /* Dark FAQ Accordion Section */
-.b2b-faq-dark {
+#faq.b2b-faq-dark {
   background: radial-gradient(circle at 50% 20%, rgba(3, 226, 156, 0.08) 0%, var(--teal) 80%);
   color: var(--text-light);
   padding: clamp(80px, 11vw, 150px) 0;
@@ -434,7 +448,7 @@
 }
 
 .b2b-faq-dark .faq-item {
-  background: var(--gray-card);
+  background: var(--teal-card);
   border: 1px solid var(--teal-border);
   color: var(--text-light);
   min-width: 0;
@@ -520,6 +534,95 @@
   height: 50px;
   padding: 0 22px;
   font-size: 13px;
+}
+
+/* Allow complete labels and borders to fit, including enlarged text. */
+.b2b-cta-actions > a,
+.mobile-drawer-footer > a,
+.footer-card a.btn-hero-outline,
+.footer-card a.btn-action-pill {
+  max-width: 100%;
+  min-width: 0;
+  flex-shrink: 0;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+  line-height: 1.5;
+  min-height: 48px;
+}
+
+.b2b-cta-actions > a {
+  height: auto !important;
+  padding-block: 12px !important;
+}
+
+.mobile-drawer {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  gap: 20px;
+}
+
+.mobile-drawer-header,
+.mobile-drawer-footer {
+  flex-shrink: 0;
+}
+
+.mobile-drawer-links a {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  min-height: 44px;
+}
+
+.b2b-breadcrumb a,
+.footer-bottom-bar a,
+.footer-card a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.b2b-breadcrumb a {
+  /* Keep the compact breadcrumb while retaining a generous hit area. */
+  margin-block: -10px;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #00845b;
+  outline-offset: 4px;
+}
+
+.btn-action-pill,
+.btn-menu-pill,
+.mobile-drawer-close,
+.site-brand-pill {
+  min-height: 44px;
+}
+
+.hero-section :focus-visible,
+.mobile-drawer :focus-visible,
+#faq :focus-visible {
+  outline-color: var(--mint);
+}
+
+.b2b-faq-dark .faq-trigger:focus-visible {
+  outline-offset: -4px;
+}
+
+@media (max-width: 480px) {
+  .hero-section { padding-top: 74px; }
+  .mobile-drawer-header { gap: 12px; flex-wrap: wrap; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
 
 /* ==========================================================================
@@ -790,7 +893,7 @@
 
   .b2b-faq-dark .faq-trigger {
     font-size: clamp(14px, 3.8vw, 15.5px);
-    padding: 16px 0;
+    padding: 16px;
   }
 
   .b2b-faq-dark .faq-content {
