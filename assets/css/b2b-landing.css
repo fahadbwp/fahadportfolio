@@ -22,9 +22,10 @@
 .b2b-breadcrumb {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 13px;
+  gap: 12px;
+  font-size: 15px;
   font-weight: 600;
+  line-height: 24px;
   color: var(--mint);
   margin-bottom: 12px;
   justify-content: center;
@@ -33,17 +34,27 @@
 }
 
 .b2b-breadcrumb a {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.85);
   transition: color 0.2s var(--ease);
   text-decoration: none;
 }
 
-.b2b-breadcrumb a:hover {
+.b2b-breadcrumb a:hover,
+.b2b-breadcrumb a:focus-visible {
   color: var(--mint);
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .b2b-breadcrumb-sep {
   color: rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .b2b-breadcrumb {
+    gap: 10px;
+    font-size: 14px;
+  }
 }
 
 /* First-Order Free Leads Promotional Offer Highlight */
