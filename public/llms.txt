@@ -1,39 +1,49 @@
-# Fahad Saleem
+# Fahad Saleem — AI-Assisted Web Developer | React & Next.js
 
-> Professional profile of Fahad Saleem, specializing in B2B lead generation & prospect research, spreadsheet data research & organization, and custom web development.
+> AI-Assisted Web Developer and Computer Science graduate specializing in rapid prototyping and full-stack deployment. Expert in leveraging AI coding assistants (Gemini, Codex, Antigravity) to automate boilerplate code, significantly reducing development cycles. Proven track record of architecting, building, and deploying functional web applications and AI utilities on Vercel using modern JavaScript and Python ecosystems.
 
 * Canonical URL: https://fahadsaleembwp.vercel.app/
 * Primary GitHub: https://github.com/fahadbwp
 * Upwork Profile: https://www.upwork.com/freelancers/~01402e2d3e4f4322b7?p=1974100444575100928
 * Contact Email: fahadsaleembwp@gmail.com
-* Location: Bahawalpur, Punjab, Pakistan
+* WhatsApp / Phone: +92 317 2821353
+* Location: Bahawalpur, Punjab, Pakistan (GMT+5)
 
-## Professional Identity & Core Competencies
-* **Dedicated B2B Lead Gen Landing Page**: https://fahadsaleembwp.vercel.app/b2b-lead-generation/
-* **AI Data Collection & Annotation**: Video data collection, image annotation, object tagging, and AI dataset labeling.
-* **B2B Lead Generation & Data Entry**: Prospect research, decision-maker discovery (Founders, CMOs, Directors), email verification, and structured data entry in Excel & Google Sheets.
-* **Prospecting Tools**: LinkedIn Sales Navigator, Apollo.io, Hunter.io, NeverBounce.
-* **AI-Assisted Web Development**: Responsive web applications and developer tools built with Python, Flask, React, TypeScript, and Next.js.
-
-## Professional Experience
-* **Claru.ai** — AI Data Collection & Annotation Contributor (Project-Based), Feb 2026 – Oct 2026.
-  * Real-world video data collection, image and video annotation, dataset labeling, and task submission.
-* **UP-Skiller** — Lead Generation & Data Entry, 2023 – 2025.
-  * Targeted prospect research using LinkedIn Sales Navigator and Apollo.io, email research, and structured spreadsheet data management.
-
-## Education
-* **BS Computer Science** — The Islamia University of Bahawalpur (2021–2025 academic period).
-  * Final semester examinations completed; result awaited.
+## Technical Skills
+* **Web Technologies**: Next.js, React, TypeScript, JavaScript, Tailwind CSS, HTML/CSS
+* **Backend & Data**: Python, Flask, RESTful APIs (YouTube Data API), JSON/CSV parsing
+* **AI & Deployment**: Gemini, Codex, Antigravity, Groq AI, Prompt Engineering, Vercel, Git/GitHub
+* **Data Operations**: AI Data Annotation, Data Mining, Web Scraping, Data Management, Google Sheets, Microsoft Excel
 
 ## Featured & Verified Projects
-* **Plexudo — YouTube Creator Tools**: Creator platform combining YouTube Data API v3 and Groq AI for video diagnostics, title ideas, and competitor channel insights.
-  * Live Site: https://plexudo.vercel.app
-  * Repository: https://github.com/fahadbwp/plexodu
-* **AI Smart Text Utility**: Open-source developer utility for formatting, text cleanup, JSON/CSV conversion, and AI-assisted text transformation.
-  * Live Site: https://ai-text-utility.vercel.app/
+* **Plexudo — YouTube Creator Tools**: Architected and deployed an SEO suite and analytics dashboard for YouTube creators using AI-assisted rapid development. Integrated YouTube Data API to extract real-time video metrics and competitor data, and engineered a custom 50-point rating framework using Groq AI for automated video insights, trend analysis, and content strategy recommendations.
+  * Live Application: https://plexudo.vercel.app/
+  * Tech Stack: Next.js, Python Flask, YouTube Data API, Groq AI, Vercel
+* **AI Smart Text Utility**: Built a comprehensive text manipulation utility featuring AI-driven writing assistance, formatting, and data conversion (JSON to CSV). Utilized Gemini and Codex to accelerate the development of complex state management and UI components.
+  * Live Application: https://ai-text-utility.vercel.app/
   * Repository: https://github.com/fahadbwp/ai-text-utility
-* **Haveli Village Restaurant Web & Ordering System**: Interactive digital menu and WhatsApp ordering platform for local restaurant.
-  * Live Site: https://haveli-village-restaurant.vercel.app/
+  * Tech Stack: Next.js, React, TypeScript, Tailwind CSS
+* **Haveli Village Restaurant Web Platform**: Commercial culinary web application with interactive digital menu browsing and direct WhatsApp ordering integration.
+  * Live Application: https://haveli-village-restaurant.vercel.app/
+  * Tech Stack: React, Tailwind CSS, WhatsApp API, Vercel
 
-## Optional Informational Note
-This file is provided as an informational, human- and machine-readable reference summarizing the publicly available portfolio of Fahad Saleem. It is not an assertion of search engine ranking guarantees.
+## Professional Experience
+* **Junior Web Developer** — Upwork (Freelance), Mar 2026 – Sep 2026.
+  * Developed and maintained responsive web interfaces utilizing React and modern CSS frameworks.
+  * Leveraged AI coding tools to optimize workflows, debug complex logic errors, and rapidly iterate on client feedback.
+* **AI Data Collection & Annotation Contributor** — Claru.ai (Project-based), Feb 2026 – Oct 2026.
+  * Collected, structured, and submitted high-quality real-world video and image data critical for training machine learning models.
+  * Executed precise data labeling protocols in strict adherence to complex project guidelines.
+* **Data Management & Lead Generation Specialist** — UP-Skiller & Upwork, Mar 2021 – Mar 2025.
+  * Conducted advanced data mining and contact discovery using online research tools and automated scraping methods.
+  * Managed large-scale prospect databases, ensuring data integrity for B2B outreach campaigns.
+
+## Education
+* **BS Computer Science** — The Islamia University of Bahawalpur (2021–2025).
+  * Final semester examinations completed; coursework in software engineering, algorithms, database systems, and full-stack web applications.
+* **Intermediate (ICS)** — Government S.E. College for Boys, Bahawalpur (Completed 2021).
+  * Computer Science, Mathematics, and Physics pre-engineering computing foundation.
+
+## Specialized Service Landing Pages
+* **B2B Lead Generation Landing Page**: https://fahadsaleembwp.vercel.app/b2b-lead-generation/
+* **Data Research & Spreadsheet Cleaning**: https://fahadsaleembwp.vercel.app/data-research/
