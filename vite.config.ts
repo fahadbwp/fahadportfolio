@@ -16,6 +16,7 @@ export default defineConfig({
         main: resolve(import.meta.dirname, 'index.html'),
         b2bLeadGen: resolve(import.meta.dirname, 'b2b-lead-generation/index.html'),
         dataResearch: resolve(import.meta.dirname, 'data-research/index.html'),
+        webDev: resolve(import.meta.dirname, 'web-development/index.html'),
       },
     },
   },

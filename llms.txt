@@ -9,6 +9,11 @@
 * WhatsApp / Phone: +92 317 2821353
 * Location: Bahawalpur, Punjab, Pakistan (GMT+5)
 
+## Specialized Service Landing Pages
+* **AI-Assisted Web Development & Next.js Apps**: https://fahadsaleembwp.vercel.app/web-development/
+* **B2B Lead Generation & Prospect Research**: https://fahadsaleembwp.vercel.app/b2b-lead-generation/
+* **Data Research & Spreadsheet Cleaning**: https://fahadsaleembwp.vercel.app/data-research/
+
 ## Technical Skills
 * **Web Technologies**: Next.js, React, TypeScript, JavaScript, Tailwind CSS, HTML/CSS
 * **Backend & Data**: Python, Flask, RESTful APIs (YouTube Data API), JSON/CSV parsing
@@ -43,7 +48,3 @@
   * Final semester examinations completed; coursework in software engineering, algorithms, database systems, and full-stack web applications.
 * **Intermediate (ICS)** — Government S.E. College for Boys, Bahawalpur (Completed 2021).
   * Computer Science, Mathematics, and Physics pre-engineering computing foundation.
-
-## Specialized Service Landing Pages
-* **B2B Lead Generation Landing Page**: https://fahadsaleembwp.vercel.app/b2b-lead-generation/
-* **Data Research & Spreadsheet Cleaning**: https://fahadsaleembwp.vercel.app/data-research/
